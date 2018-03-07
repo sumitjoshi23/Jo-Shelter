@@ -30,10 +30,12 @@
     cursor: pointer;
     float: left;
     margin-left: 9%;
+    text-decoration: none;
 }
 
 .logo h3 {
     text-transform: capitalize;
+    text-decoration: none;
     color: #323232;
     font-size: 1.6rem;
     letter-spacing: 1px;
@@ -49,6 +51,7 @@
     text-align: center;
     padding-top: 0.2%;
     transition: all 0.3s ease-out;
+    text-decoration: none;
 }
 
 .logo:hover > h3 {
