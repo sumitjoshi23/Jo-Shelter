@@ -13,7 +13,7 @@
 }
 
 
-                /*- - - - Banner - - - -*/
+/*- - - - Banner - - - -*/
 
 #banner {
     background: url('images/background_banner.jpg') no-repeat center;
@@ -22,17 +22,22 @@
     /*temporary remove*/
 }
 
-header {
-    padding: 3% 6% 0px 10%;
-}
+header {}
 
-    /*-- NAV --*/
+/*-- NAV --*/
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 86vw;
+    margin: 3% 0px 0 6%;
+}
 
 .logo {
     font-family: 'Roboto', sans-serif;
-    float: left;
     cursor: pointer;
-    
+    float: left;
 }
 
 .logo h3 {
@@ -43,28 +48,35 @@ header {
     word-spacing: 4px;
     font-weight: 300;
     cursor: pointer;
+    transition: all 0.3s ease-out;
 }
 
 .logo p {
     color: rgba(244, 244, 244, 0.63);
     font-size: 11px;
     text-align: center;
-    padding-top: 1.2%;
+    padding-top: 0.8%;
+    transition: all 0.3s ease-out;
 }
 
+.logo:hover > h3 {
+    color: #ef7272;
+}
+
+.logo:hover > p {
+    color: #68b0f1;
+}
+
+
 nav {
-    margin-top: 1.2%;
-    margin-left: 40%;
-    min-width: 45%;
-    /*float: right;*/
-    display: inline-block;
+    float: right;
+    margin-top: 0.8%;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    /*margin-left: 2%;*/
-    margin-left: 7%;
+    margin-left: 3rem;
     display: inline-block;
     text-transform: capitalize;
     font-family: 'Open Sans', sans-serif;
@@ -74,10 +86,14 @@ nav a {
     transition: all 0.2s;
 }
 
+nav a:first-child {
+    margin-left: 0%;
+}
+
 nav a:hover {
     text-decoration: underline;
     text-decoration-color: #f45151;
-    
+
 }
 
 .active:after {
@@ -101,14 +117,4 @@ a:hover:after {
 }
 
 
-        /*- - - - Content - - - -*/
-
-
-
-
-
-
-
-
-
-
+/*- - - - Content - - - -*/
