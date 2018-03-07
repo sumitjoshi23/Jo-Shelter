@@ -120,9 +120,7 @@ a:hover:after {
 
 /*- - - - Content - - - -*/
 
-.banner_content {
-    
-}
+.banner_content {}
 
 .banner_content_container {
     padding: 18% 0px 10% 10%;
@@ -152,7 +150,7 @@ a:hover:after {
     outline: none;
     box-shadow: none;
     background-color: #f4a665;
-    background: linear-gradient(to right , #ef5f5f, #ba8c62);
+    background: linear-gradient(to right, #ef5f5f, #ba8c62);
     border: none;
     font-weight: bolder;
     padding: 1% 2%;
@@ -164,14 +162,6 @@ a:hover:after {
 }
 
 .banner_content button:hover {
-    /*background: linear-gradient(to right , #f45151, #f45151);*/
-    color: #e8e8e8;
+    background-color: #ba8c62!important;
+    background: linear-gradient(to right , #ba8c62, #ba8c62);
 }
-
-
-
-
-
-
-
-
