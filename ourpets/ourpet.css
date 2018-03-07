@@ -12,6 +12,7 @@
     padding: 0;
     margin: 0;
 }
+
 /*-- NAV --*/
 
 .navbar {
@@ -111,13 +112,16 @@ a:hover:after {
 }
 
 /*- - - - Content - - - -*/
+
 /*#f6f6f6s*/
 
 #our_pet_content {
     font-family: 'montserrat', sans-serif;
     padding-top: 8%;
+    padding-bottom: 3%;
     background-color: #f6f6f6;
-    margin-bottom: 8%; /*remove*/
+    margin-bottom: 8%;
+    /*remove*/
 }
 
 .our_pet_title h4 {
@@ -151,13 +155,20 @@ a:hover:after {
 }
 
 .effect {
-    background-color: transparent;
+    background: transparent; 
     display: block;
-    transition: all 0.3s;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    transition: all 3s;
 }
 
 .pets:hover span {
-    background-color: #79f4ed;
+    background: #00F260;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(84, 168, 251, 0.72), rgba(57, 245, 133, 0.71));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(84, 168, 251, 0.72), rgba(57, 245, 133, 0.71));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .pets img {
@@ -173,6 +184,7 @@ a:hover:after {
     margin-top: 3%;
     margin-bottom: 3%;
 }
+
 .pets button {
     font-family: 'Lato', sans-serif;
     border: 2px solid #f1cdb3;
@@ -195,15 +207,57 @@ a:hover:after {
     background-color: #f1cdb3;
 }
 
+/*page*/
+
+.page_container {
+    margin-top: 3.5%;
+    display: block;
+    text-align: center;
+}
+
+.page_container span {
+    cursor: pointer;
+    height: 2.1rem;
+    width: 2.1rem;
+    border-radius: 50%;
+    border: 2px solid #f1cdb3;
+    display: inline-block;
+    margin-left: 1%;
+    transition: all 0.3s;
+}
+
+.page_container span:last-child {
+    margin-left: 0.3rem;
+}
+
+.page_container span p  {
+    font-family: 'montserrat', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.page_container .dot {
+    height: 0px;
+    width: 0px;
+    margin-left: 0.3%;
+}
+
+..page_container .dot:last-child {
+    margin-right: 0.3%;
+}
+
+.page_container span:hover {
+    background-color: #f1cdb3;
+}
+
+
+
+
+
 
 /*.effect {
     background-color: blue;
     width: 100%;
 }*/
-
-
-
-
-
-
-
