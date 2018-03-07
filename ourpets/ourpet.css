@@ -120,8 +120,6 @@ a:hover:after {
     padding-top: 8%;
     padding-bottom: 3%;
     background-color: #f6f6f6;
-    margin-bottom: 8%;
-    /*remove*/
 }
 
 .our_pet_title h4 {
@@ -159,7 +157,6 @@ a:hover:after {
     display: block;
     border-top-left-radius: 3%;
     border-top-right-radius: 3%;
-    transition: all 3s;
 }
 
 .pets:hover span {
@@ -252,12 +249,51 @@ a:hover:after {
     background-color: #f1cdb3;
 }
 
+/*fotter*/
 
+fotter {
+    background: url('../images/fotter_backround.jpg') no-repeat center;
+    background-size: cover;
+    display: block;
+}
 
+.fotter_container {
+    font-family: 'Lato', sans-serif;
+    margin-left: 15%;
+    padding-top: 5%;
+    color: white;
+    padding-bottom: 5%;
+}
 
+.qna {
+    display: inline-block;
+}
 
+.fotter_container h6 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 13%;
+}
 
-/*.effect {
-    background-color: blue;
-    width: 100%;
-}*/
+.fotter_container p {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+    padding-left: 7%;
+}
+
+.fotter_container img {
+    display: inline-block;
+    width: 13%;
+}
+
+.mail {
+    margin-top: 3.2%;
+}
+
+.number {
+    margin-top: 1.6%;
+}
