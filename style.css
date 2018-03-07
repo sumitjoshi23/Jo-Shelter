@@ -1,0 +1,114 @@
+/*
+
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+                /*- - - - Banner - - - -*/
+
+#banner {
+    background: url('images/background_banner.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    /*temporary remove*/
+}
+
+header {
+    padding: 3% 6% 0px 10%;
+}
+
+    /*-- NAV --*/
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    cursor: pointer;
+    
+}
+
+.logo h3 {
+    text-transform: capitalize;
+    color: #ffdcc0;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.logo p {
+    color: rgba(244, 244, 244, 0.63);
+    font-size: 11px;
+    text-align: center;
+    padding-top: 1.2%;
+}
+
+nav {
+    margin-top: 1.2%;
+    margin-left: 40%;
+    min-width: 45%;
+    /*float: right;*/
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    /*margin-left: 2%;*/
+    margin-left: 7%;
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-position: under;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #f45151;
+    
+}
+
+.active:after {
+    content: '';
+    height: 2.6px;
+    background: #fee4c9;
+    display: block;
+    margin-top: 2%;
+    width: 95%;
+    margin: auto;
+    transition: all 0.2s;
+}
+
+.active:hover {
+    text-decoration: none !important;
+}
+
+
+a:hover:after {
+    background: #f45151;
+}
+
+
+        /*- - - - Content - - - -*/
+
+
+
+
+
+
+
+
+
+
