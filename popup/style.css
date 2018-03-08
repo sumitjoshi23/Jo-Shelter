@@ -21,12 +21,13 @@ body {
 #popup {}
 
 .popup_container {
-    width: 60vw;
+    width: 57vw;
     float: left;
     background-color: white;
     margin-left: 20%;
     margin-top: 10%;
     border-radius: 0.45rem;
+    box-shadow: 4px 6px 20px 0px #b9b4b4;
 }
 
 .petimage {
@@ -35,14 +36,17 @@ body {
 
 .petimage img {
     width: 135%;
+    margin-top: 5%;
+    margin-bottom: 6%;
 }
 
 .pet_detail {
     width: 60%;
     display: inline-block;
     float: right;
-    margin-top: 2%;
-    margin-right: -1%;
+    margin-right: 2%;
+    margin-top: 3.5%;
+    margin-bottom: 6%;
 }
 
 .pet_detail h4 {
@@ -67,33 +71,61 @@ body {
     margin-bottom: 1.5%;
 }
 
-.pet_detail ul: {
-    color: red;
+.pet_detail ul {
     list-style-type: none;
+    margin-top: 3%;
 }
-
-/*.pet_detail {
-    color: #f1cdb3;
-    font-size: 3rem;
-}*/
 
 .pet_detail ul li {
     font-family: 'montserrat', sans-serif;
-    color: black;
+    color: #545454;
     font-weight: 600;
-    font-size: 1rem;
-    position: relative;
+    font-size: 1.1rem;
     overflow: none;
+    position: relative;
+    margin-left: 4%;
 }
 
-.pet_detail ul li::before {
-    content: "• ";
+.pet_detail ul li span {
+    font-size: 3.5rem;
     color: #f1cdb3;
-    font-size: 4rem;
-    position: relative;
-    /*top: 12px;
-    left: 9px;*/
-    top: 0.75rem;
-    left: 2%;
+    margin-top: -5.9%;
+    margin-left: -5%;
+    position: absolute;
+}
 
+
+/* button */
+
+.popup_container {
+    position: relative;
+}
+
+.cross_button {
+    cursor: pointer;
+    height: 2.1rem;
+    width: 2.1rem;
+    border-radius: 50%;
+    border: 2px solid #f1cdb3;
+    position: absolute;
+    top: -11%;
+    right: -4%;
+    background-color: #f1f1f1;
+    transition: all 0.3s;
+}
+
+.cross_button p {
+    text-align: center;
+    margin-top: -4%;
+    color: #f1cdb3;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.cross_button:hover {
+    background-color: #f1cdb3;
+}
+
+.cross_button:hover > p{
+    color: #eeeeee;
 }
