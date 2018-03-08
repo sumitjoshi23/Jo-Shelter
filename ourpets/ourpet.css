@@ -91,6 +91,11 @@ nav a:hover {
     text-decoration-color: #f45151;
 }
 
+
+.active_nav {
+    text-decoration: none !important;
+}
+
 .active_nav:after {
     content: '';
     height: 2.6px;
@@ -254,6 +259,7 @@ a:hover:after {
 #fotter {
     background: url('../images/fotter_backround.jpg') no-repeat center;
     background-size: cover;
+    display: block;
 }
 
 .fotter_contact {
@@ -261,7 +267,7 @@ a:hover:after {
     width: 25%;
     display: inline-block;
     margin-left: 10%;
-    margin-bottom: 4.5%;
+    margin-bottom: 2%;
     margin-top: 4.5%;
 }
 

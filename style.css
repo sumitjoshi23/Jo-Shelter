@@ -101,6 +101,10 @@ nav a:hover {
     color: rgb(245, 172, 172);
 }
 
+.active_nav {
+    text-decoration: none !important;
+}
+
 .active_nav:after {
     content: '';
     height: 2.6px;
@@ -167,4 +171,64 @@ a:hover:after {
 .banner_content button:hover {
     background-color: #ba8c62;
     background: linear-gradient(to right , #ba8c62 , #ba8c62);
+1}
+
+
+/*- - - - Fotter - - - -*/
+
+
+#fotter {
+    background: url('images/fotter_backround.jpg') no-repeat center;
+    background-size: cover;
+    display: block;
+}
+
+.fotter_contact {
+    font-family: 'ubuntu', sans-serif;
+    width: 25%;
+    display: inline-block;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    margin-top: 4.5%;
+}
+
+.fotter_contact h6, .fotter_adress h6 {
+    font-family: 'ubuntu', sans-serif;
+    font-size: 1.8rem;
+    color: #e0e0e0;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.fotter_content {
+    /*min-width: 20%;*/
+    width: 100%;
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.fotter_content img, .fotter_adress img {
+    float: left;
+    margin-right: 6%;
+}
+
+.fotter_adress img {
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+.fotter_content p, .fotter_adress p {
+    float: left;
+    margin-top: 1%;
+    color: #edd7c7;
+    font-size: 0.9rem;
+}
+
+.fotter_adress {
+    font-family: 'ubuntu', sans-serif;
+    width: 40%;
+    display: inline-block;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 4.5%;
 }
