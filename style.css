@@ -19,11 +19,7 @@
 #banner {
     background: url('images/background_banner.jpg') no-repeat center;
     background-size: cover;
-    /*height: 100vh;*/
-    /*temporary remove*/
 }
-
-header {}
 
 /*-- NAV --*/
 
@@ -149,6 +145,7 @@ a:hover:after {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     text-align: left;
+    width:  43%;
 }
 
 .banner_content button {
@@ -170,12 +167,105 @@ a:hover:after {
 
 .banner_content button:hover {
     background-color: #ba8c62;
-    background: linear-gradient(to right , #ba8c62 , #ba8c62);
-1}
+    background: linear-gradient(to right, #ba8c62, #ba8c62);
+}
+
+
+/*- - - - 3 pets - - - -*/
+
+
+#our_pet_content {
+    font-family: 'montserrat', sans-serif;
+    padding-top: 8%;
+    padding-bottom: 3%;
+    background-color: #f6f6f6;
+}
+
+.our_pet_content_container h4 {
+    text-align: center;
+    font-size: 25px;
+    color: #6b6b6b;
+}
+
+.pet_row {
+    max-width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.pets {
+    width: 30%;
+    display: inline-block;
+    border-radius: 3%;
+    color: white;
+    background-color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+    padding-bottom: 1.5%;
+    margin-left: 2.5%;
+}
+
+.pets:hover {
+    box-shadow: 0px 4px 18px 2px #9f9e9e;
+}
+
+.effect {
+    background: transparent;
+    display: block;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+.pets:hover span {
+    background: #00F260;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(84, 168, 251, 0.72), rgba(57, 245, 133, 0.71));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(84, 168, 251, 0.72), rgba(57, 245, 133, 0.71));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pets img {
+    width: 100%;
+    margin-top: 6%;
+}
+
+.pets p {
+    text-align: center;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 1.4rem;
+    color: #373737;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.pets button {
+    font-family: 'Lato', sans-serif;
+    border: 2px solid #f1cdb3;
+    outline: none;
+    background-color: white;
+    padding: 2% 8% !important;
+    border-radius: 1.5rem;
+    letter-spacing: 1.1px;
+    color: #525252;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.pets button:hover {
+    /*background: linear-gradient(to right , #f45151, #f45151);*/
+    background-color: #f1cdb3;
+}
+
+
 
 
 /*- - - - Fotter - - - -*/
-
 
 #fotter {
     background: url('images/fotter_backround.jpg') no-repeat center;
@@ -192,7 +282,8 @@ a:hover:after {
     margin-top: 4.5%;
 }
 
-.fotter_contact h6, .fotter_adress h6 {
+.fotter_contact h6,
+.fotter_adress h6 {
     font-family: 'ubuntu', sans-serif;
     font-size: 1.8rem;
     color: #e0e0e0;
@@ -201,13 +292,13 @@ a:hover:after {
 }
 
 .fotter_content {
-    /*min-width: 20%;*/
     width: 100%;
     display: inline-block;
     margin-top: 5%;
 }
 
-.fotter_content img, .fotter_adress img {
+.fotter_content img,
+.fotter_adress img {
     float: left;
     margin-right: 3%;
     width: 9%;
@@ -219,7 +310,8 @@ a:hover:after {
     width: 4%;
 }
 
-.fotter_content p, .fotter_adress p {
+.fotter_content p,
+.fotter_adress p {
     float: left;
     margin-top: 1%;
     color: #edd7c7;

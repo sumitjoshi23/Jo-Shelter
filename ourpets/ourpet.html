@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="../logo/brown_in_white.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="ourpet.css">
+
+    <!--linking popup to ourpet-->
+    <link rel="stylesheet" href="../popup/popup.css">
 </head>
 
 <body>
@@ -38,28 +41,28 @@
                 <h4>Our friends who <br> are looking for a house</h4>
             </div>
             <div class="pet_row first">
-                <div class="pets one">
+                <div class="pets one" id="0">
                     <span class="effect">
                         <img src="image/1.png" alt="first pet">
                     </span>
                     <p>Katrine</p>
                     <button>Learn More</button>
                 </div>
-                <div class="pets two">
+                <div class="pets two" id="1">
                     <span class="effect">
                         <img src="image/2.png" alt="second pet">
                     </span>
                     <p>Jennifer</p>
                     <button>Learn More</button>
                 </div>
-                <div class="pets three">
+                <div class="pets three" id="2">
                     <span class="effect">
                         <img src="image/3.png" alt="third pet">
                     </span>
                     <p>Woody</p>
                     <button>Learn More</button>
                 </div>
-                <div class="pets four">
+                <div class="pets four" id="3">
                     <span class="effect">
                         <img src="image/4.png" alt="fourth pet">
                     </span>
@@ -68,29 +71,29 @@
                 </div>
             </div>
 
-            <div class="pet_row two">
-                <div class="pets one">
+            <div class="pet_row five">
+                <div class="pets one" id="4">
                     <span class="effect">
                         <img src="image/5.png" alt="fifth pet">
                     </span>
                     <p>Timmy</p>
                     <button>Learn More</button>
                 </div>
-                <div class="pets two">
+                <div class="pets six" id="5">
                     <span class="effect">
                         <img src="image/6.png" alt="sixth pet">
                     </span>
                     <p>Charly</p>
                     <button>Learn More</button>
                 </div>
-                <div class="pets three">
+                <div class="pets seven" id="6">
                     <span class="effect">
                         <img src="image/7.png" alt="seventh pet">
                     </span>
                     <p>Scarlett</p>
                     <button>Learn More</button>
                 </div>
-                <div class="pets four">
+                <div class="pets eight" id="7">
                     <span class="effect">
                         <img src="image/8.png" alt="eight pet">
                     </span>
@@ -111,6 +114,29 @@
                 <span><p>10</p></span>
             </div>
         </div>
+
+        <!-- popup -->
+
+        <section id="popup">
+            <div class="popup_container">
+                <div class="petimage">
+                    <img src="../ourpets/image/2.png" alt="pet1">
+                </div>
+                <div class="pet_detail">
+                    <h4>Jennifer</h4>
+                    <h6>Pooch + Labrador</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+                    <ul type="none">
+                        <li><span>•</span>Age: 2 Months</li>
+                        <li><span>•</span>Inoculations: none</li>
+                        <li><span>•</span>Diseases: none</li>
+                        <li><span>•</span>Parasites: none</li>
+                    </ul>
+                </div>
+                <span class="cross_button"><p>&#10005;</p></span>
+            </div>
+        </section>
+
     </section>
 
     <fotter id="fotter">
@@ -121,14 +147,14 @@
                     <img src="../images/qna1.png" alt="mailid">
                     <p>bhupenders225@gmail.com</p>
                 </div>
-                
+
                 <div class="fotter_content">
                     <img src="../images/qna2.png" alt="phone number">
                     <p>+91-97******46</p>
                 </div>
             </div>
             <div class="fotter_adress">
-               <h6>We are waiting <br> for your visit</h6>
+                <h6>We are waiting <br> for your visit</h6>
                 <div class="adress">
                     <img src="../images/location.png" alt="Location Image">
                     <p>Pratap Vihar Part-2, Kirari Suleman Nagar <br> New Delhi, India</p>
@@ -138,6 +164,7 @@
     </fotter>
 
     <script src="ourpet.js"></script>
+    <script src='../popup/popup.js'></script>
 </body>
 
 </html>
