@@ -14,72 +14,72 @@ var dataController = (function () {
             breed: "pooch1",
             information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh",
             age: 1,
-            inoculations: "none",
-            diseases: "none",
-            parasites: "none"
+            inoculations: "1none",
+            diseases: "1none",
+            parasites: "1none"
         },
         {
             name: "Jennifer",
             breed: "pooch2",
             information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh",
             age: 2,
-            inoculations: "none",
-            diseases: "none",
-            parasites: "none"
+            inoculations: "2none",
+            diseases: "2none",
+            parasites: "2none"
         },
         {
             name: "Woody",
             breed: "pooch3",
             information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh",
             age: 3,
-            inoculations: "none",
-            diseases: "none",
-            parasites: "none"
+            inoculations: "3none",
+            diseases: "3none",
+            parasites: "3none"
         },
         {
             name: "Sophia",
             breed: "pooch4",
             information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh",
             age: 4,
-            inoculations: "none",
-            diseases: "none",
-            parasites: "none"
+            inoculations: "4none",
+            diseases: "4none",
+            parasites: "4none"
         },
         {
             name: "Timmy",
             breed: "pooch5",
             information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh",
             age: 5,
-            inoculations: "none",
-            diseases: "none",
-            parasites: "none"
+            inoculations: "5none",
+            diseases: "5none",
+            parasites: "5none"
         },
         {
             name: "Charly",
             breed: "pooch6",
             information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh",
             age: 6,
-            inoculations: "none",
-            diseases: "none",
-            parasites: "none"
+            inoculations: "6none",
+            diseases: "6none",
+            parasites: "6none"
         },
         {
             name: "Scarlett",
             breed: "pooch7",
             information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh",
             age: 7,
-            inoculations: "none",
-            diseases: "none",
-            parasites: "none"
+            inoculations: "7none",
+            diseases: "7none",
+            parasites: "7none"
         },
         {
             name: "Freddie",
             breed: "pooch8",
             information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh",
             age: 8,
-            inoculations: "none",
-            diseases: "none",
-            parasites: "none"
+            inoculations: "8none",
+            diseases: "8none",
+            parasites: "8none"
         }
     ]
 
@@ -131,12 +131,19 @@ var UIController = (function () {
         
         document.querySelector(".petimage img").src = data.image;
         document.querySelector(".pet_detail h4").textContent = data.name;
-        document.querySelector(".pet_detail h4").textContent = data.breed;
-        document.querySelector(".pet_detail h4").textContent = data.information;
-        document.querySelector(".pet_detail h4").textContent = data.age;
-        document.querySelector(".pet_detail h4").textContent = data.inoculations;
-        document.querySelector(".pet_detail h4").textContent = data.diseases;
-        document.querySelector(".pet_detail h4").textContent = data.parasites;
+        document.querySelector(".pet_detail h6").textContent = data.breed;
+        document.querySelector(".pet_detail p").textContent = data.information;
+        document.querySelectorAll(".pet_detail ul li span ~ span")[0].textContent = data.age;
+        document.querySelectorAll(".pet_detail ul li span ~ span")[1].textContent = data.inoculations;
+        document.querySelectorAll(".pet_detail ul li span ~ span")[2].textContent = data.diseases;
+        document.querySelectorAll(".pet_detail ul li span ~ span")[3].textContent = data.parasites;
+        
+        
+        
+        document.querySelector("#popup").classList.add("popup_after");
+        document.querySelector(".popup_container").classList.add("popup_container_after");
+        
+        
         console.log(data.name);
         
     }
