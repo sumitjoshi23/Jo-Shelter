@@ -30,7 +30,8 @@ body {
 }
 
 .popup_container {
-    width: 57vw;
+    /*width: 57vw;*/
+    width: 82%;
     float: left;
     background-color: #fefefe;
     border-radius: 0.45rem;
