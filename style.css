@@ -145,7 +145,7 @@ a:hover:after {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     text-align: left;
-    width:  43%;
+    width: 43%;
 }
 
 .banner_content button {
@@ -173,7 +173,6 @@ a:hover:after {
 
 /*- - - - 3 pets - - - -*/
 
-
 #our_pet_content {
     font-family: 'montserrat', sans-serif;
     padding-top: 8%;
@@ -183,12 +182,15 @@ a:hover:after {
 
 .our_pet_content_container h4 {
     text-align: center;
-    font-size: 25px;
+    font-size: 2.2rem;
     color: #6b6b6b;
+    width: 70%;
+    display: block;
+    margin: auto;
 }
 
 .pet_row {
-    max-width: 50%;
+    width: 50%;
     display: block;
     margin: auto;
     margin-top: 2%;
@@ -316,6 +318,10 @@ a:hover:after {
     margin-top: 1%;
     color: #edd7c7;
     font-size: 0.9rem;
+}
+
+.adress p {
+    line-height: 1.3rem;
 }
 
 .fotter_adress {
