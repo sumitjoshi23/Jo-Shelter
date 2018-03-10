@@ -300,6 +300,10 @@ a:hover:after {
     width: 4%;
 }
 
+.adress p {
+    line-height: 1.3rem;
+}
+
 .fotter_content p,
 .fotter_adress p {
     float: left;
