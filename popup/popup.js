@@ -96,10 +96,6 @@ var dataController = (function () {
                 height: backup[position].disease,
                 gender: backup[position].gender
             }
-        },
-
-        backupData: function () {
-            return backup;
         }
     }
 
@@ -112,20 +108,32 @@ var UIController = (function () {
         place: "#our_pet_content",
         crossButton: ".cross_button",
         body: "body",
-        popup: "#popup"
+        popup: "#popup",
+        knowMoreButton: ".pets button",
+        popupContainer: ".popup_container",
+        showPopup : "show_popup",
+        
+        
+        petImageClass: ".petimage img",
+        petNameClass: ".pet_detail h4",
+        petBreedClass: ".pet_detail h6",
+        petinformationClass: ".pet_detail p",
+        petULClass: ".pet_detail ul li span ~ span"
+        
+        
     };
 
     var updateUI = function (data) {
-        
-        document.querySelector(".petimage img").src = data.image;
-        document.querySelector(".pet_detail h4").textContent = data.name;
-        document.querySelector(".pet_detail h6").textContent = data.breed;
-        document.querySelector(".pet_detail p").textContent = data.information;
-        document.querySelectorAll(".pet_detail ul li span ~ span")[0].textContent = data.age;
-        document.querySelectorAll(".pet_detail ul li span ~ span")[1].textContent = data.lifeSpan;
-        document.querySelectorAll(".pet_detail ul li span ~ span")[2].textContent = data.height;
-        document.querySelectorAll(".pet_detail ul li span ~ span")[3].textContent = data.gender;
-        
+
+        document.querySelector(DOMStrings.petImageClass).src = data.image;
+        document.querySelector(DOMStrings.petNameClass).textContent = data.name;
+        document.querySelector(DOMStrings.petBreedClass).textContent = data.breed;
+        document.querySelector(DOMStrings.petinformationClass).textContent = data.information;
+        document.querySelectorAll(DOMStrings.petULClass)[0].textContent = data.age;
+        document.querySelectorAll(DOMStrings.petULClass)[1].textContent = data.lifeSpan;
+        document.querySelectorAll(DOMStrings.petULClass)[2].textContent = data.height;
+        document.querySelectorAll(DOMStrings.petULClass)[3].textContent = data.gender;
+
     }
 
     /*UIController Return*/
@@ -137,7 +145,10 @@ var UIController = (function () {
                 place: DOMStrings.place,
                 crossButton: DOMStrings.crossButton,
                 body: DOMStrings.body,
-                popup: DOMStrings.popup
+                popup: DOMStrings.popup,
+                knowMoreBtn : DOMStrings.knowMoreButton,
+                pupupContainer: DOMStrings.popupContainer,
+                showPopup : DOMStrings.showPopup
             }
         },
         deployHtml: function (targetData) {
@@ -154,7 +165,7 @@ var controller = (function (dataCtrl, UICtrl) {
     var sx, sy;
 
     var DOM = UICtrl.getDomStr();
-    var petStoredData = dataCtrl.backupData();
+    /*var petStoredData = dataCtrl.backupData();*/
     var mainData = {};
     var newMain = {};
 
@@ -162,40 +173,50 @@ var controller = (function (dataCtrl, UICtrl) {
         document.querySelector(DOM.petContainer).addEventListener("click", getTargetData);
 
         document.querySelector(DOM.crossButton).addEventListener("click", removePopup);
-    }
+        /*document.querySelector("#popup").addEventListener("click", removePopup);*/
 
+        /* grey space click */
+        window.addEventListener("click", greyAreaClick);
+    }
 
     var getTargetData = function (event) {
 
         var existID = event.target.parentNode.id;
 
-        if (existID !== "our_pet_content" && event.srcElement.textContent === document.querySelector(".pets button").textContent) {
+        if (existID !== DOM.place && event.srcElement.textContent === document.querySelector(DOM.knowMoreBtn).textContent) {
             var id = event.target.parentNode.id;
             var image = event.target.parentNode.childNodes[1].childNodes[1].src;
 
             mergeObject(id, image);
-            
-            document.querySelector("#popup").style.visibility = "visible";
-            document.querySelector(".popup_container").classList.toggle("show_popup");
-            
+
+            document.querySelector(DOM.popup).style.visibility = "visible";
+            document.querySelector(DOM.pupupContainer).classList.toggle(DOM.showPopup);
+
             // stop scroll
             stopScroll("enable");
         }
     }
 
     var removePopup = function (event) {
-        
-        document.querySelector("#popup").style.visibility = "hidden";
-        document.querySelector(".popup_container").classList.toggle("show_popup");
+
+        document.querySelector(DOM.popup).style.visibility = "hidden";
+        document.querySelector(DOM.pupupContainer).classList.toggle(DOM.showPopup);
 
         stopScroll("disable");
+    }
+
+    /* grey space click */
+
+    var greyAreaClick = function (event) {
+        if (event.target === document.querySelector(DOM.popup)) {
+            removePopup();
+        }
     }
 
     var mergeObject = function (petId, petImage) {
         mainData.id = petId;
         mainData.image = petImage;
-        newMain = Object.assign(mainData, petStoredData[petId]);
-        console.log(newMain);
+        newMain = Object.assign(mainData, dataCtrl.petDetail(petId));
 
         /* send it to uiController */
         UICtrl.deployHtml(newMain);

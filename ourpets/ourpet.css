@@ -50,7 +50,7 @@
     color: #323232;
     font-size: 11px;
     text-align: center;
-    padding-top: 0.2%;
+    margin-top: -3%;
     transition: all 0.3s ease-out;
     text-decoration: none;
 }
@@ -250,8 +250,19 @@ a:hover:after {
     margin-right: 0.3%;
 }
 
-.page_container span:hover {
+.page_container span:hover:not(.active_circle) {
     background-color: #f1cdb3;
+    border: 2px solid rgba(120, 232, 117, 0.81);
+}
+
+.active_circle {
+    background-color: #f1cdb38f;
+    border: 2px solid rgba(58, 175, 254, 0.84) !important;
+}
+
+.active_circle:hover {
+    background-color: #f1cdb38f;
+    border: 2px solid rgba(244, 71, 71, 0.84) !important;
 }
 
 /*fotter*/

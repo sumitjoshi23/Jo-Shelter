@@ -27,15 +27,15 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 86vw;
-    margin: 3% 0px 0 6%;
+    width: 100%;
+    padding-top: 3%;
 }
 
 .logo {
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
     float: left;
-    margin-left: 5%;
+    margin-left: 10.3%;
     text-decoration: none;
 }
 
@@ -55,7 +55,7 @@
     color: rgba(244, 244, 244, 0.63);
     font-size: 11px;
     text-align: center;
-    padding-top: 0.8%;
+    margin-top: -3%;
     transition: all 0.3s ease-out;
     text-decoration: none;
 }
@@ -70,8 +70,8 @@
 
 nav {
     float: right;
-    margin-top: 0.8%;
-    margin-right: 5%;
+    margin-top: 0.7%;
+    margin-right: 11.5%;
 }
 
 nav a {
@@ -270,27 +270,23 @@ a:hover:after {
 
 /* Arrows */
 
-/*
-.our_pet_content_container {
+#our_pet_content {
     position: relative;
-    
+
 }
 
 .arrows {
-    width: 70%;
+    width: 64%;
     position: absolute;
-    top: 153%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 100%);
 }
 
-.arrows_container {
-    width: 60%;
-}
-
-.backward_arrow, .forward_arrow {
+.backward_arrow,
+.forward_arrow {
     border-radius: 50%;
-    border: 3px solid #ffddc2;
+    border: 2px solid #ffddc2;
     display: inline-block;
     background-color: white;
     padding: 2.0% 1.5%;
@@ -302,27 +298,28 @@ a:hover:after {
     float: right;
 }
 
-.backward_arrow p, .forward_arrow p {
+.backward_arrow p,
+.forward_arrow p {
     font-family: monospace;
     color: #242424;
     font-weight: 900;
     line-height: 1rem;
     font-size: 3rem;
     text-align: center;
+    margin-top: -20%;
 }
 
-.backward_arrow:hover, .forward_arrow:hover {
-    background-color: #ffddc2;
+.backward_arrow:hover,
+.forward_arrow:hover {
+    background-color: rgba(255, 221, 194, 0.57);
+    border: 2px solid rgba(54, 237, 54, 0.65);
 }
 
-.backward_arrow:hover p, .forward_arrow:hover p{
-    color: #141414;
-    color: red;
-    color: #36ed36;
+.backward_arrow:hover p,
+.forward_arrow:hover p {
+    color: rgba(54, 237, 54, 0.65);
 }
 
-
-*/
 
 
 /*- - - - Fotter - - - -*/
