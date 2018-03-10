@@ -26,7 +26,7 @@ body {
     height: 100vh;
     z-index: 100;
     visibility: hidden;
-    transition: all 0.2s ease;
+    transition: all 0.3s;
 }
 
 .popup_container {
@@ -40,7 +40,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: all 0.35s 0.1s cubic-bezier(0, 0.7, 0.65, 1.31);
+    transition: all 0.45s 0.1s;
     opacity: 0;
     visibility: hidden;
 }

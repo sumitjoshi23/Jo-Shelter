@@ -222,9 +222,11 @@ a:hover:after {
 .pets:hover span {
     background: #00F260;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, rgba(164, 164, 164, 0.35), rgba(137, 137, 137, 0));;
+    background: -webkit-linear-gradient(to bottom, rgba(164, 164, 164, 0.35), rgba(137, 137, 137, 0));
+    ;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, rgba(164, 164, 164, 0.35), rgba(137, 137, 137, 0));;
+    background: linear-gradient(to bottom, rgba(164, 164, 164, 0.35), rgba(137, 137, 137, 0));
+    ;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -265,6 +267,62 @@ a:hover:after {
 }
 
 
+
+/* Arrows */
+
+/*
+.our_pet_content_container {
+    position: relative;
+    
+}
+
+.arrows {
+    width: 70%;
+    position: absolute;
+    top: 153%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrows_container {
+    width: 60%;
+}
+
+.backward_arrow, .forward_arrow {
+    border-radius: 50%;
+    border: 3px solid #ffddc2;
+    display: inline-block;
+    background-color: white;
+    padding: 2.0% 1.5%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.forward_arrow {
+    float: right;
+}
+
+.backward_arrow p, .forward_arrow p {
+    font-family: monospace;
+    color: #242424;
+    font-weight: 900;
+    line-height: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.backward_arrow:hover, .forward_arrow:hover {
+    background-color: #ffddc2;
+}
+
+.backward_arrow:hover p, .forward_arrow:hover p{
+    color: #141414;
+    color: red;
+    color: #36ed36;
+}
+
+
+*/
 
 
 /*- - - - Fotter - - - -*/
