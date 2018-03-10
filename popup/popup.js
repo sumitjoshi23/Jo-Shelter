@@ -176,7 +176,7 @@ var controller = (function (dataCtrl, UICtrl) {
             mergeObject(id, image);
             
             document.querySelector("#popup").style.visibility = "visible";
-            document.querySelector(".popup_container").classList.add("show_popup");
+            document.querySelector(".popup_container").classList.toggle("show_popup");
             
             // stop scroll
             stopScroll("enable");
@@ -186,7 +186,7 @@ var controller = (function (dataCtrl, UICtrl) {
     var removePopup = function (event) {
         
         document.querySelector("#popup").style.visibility = "hidden";
-        document.querySelector(".popup_container").classList.remove("show_popup");
+        document.querySelector(".popup_container").classList.toggle("show_popup");
 
         stopScroll("disable");
     }
