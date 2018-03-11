@@ -147,7 +147,7 @@ a:hover:after {
 }
 
 .about_us_container {
-    width: 60%;
+    width: 55%;
     margin: auto;
     padding-top: 2.3%;
     padding-bottom: 2.3%;
@@ -186,7 +186,7 @@ a:hover:after {
     color: #5a5959;
     font-family: "ubuntu", sans-serif;
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
 }
 
 /*- - - - Content - - - -*/
@@ -403,6 +403,11 @@ a:hover:after {
 
 /*- - - - Donate - - - -*/
 
+.donate_container {
+    padding: 2.8% 0;
+    background-color: #fafafa;
+}
+
 .donate_top {
     width: 60%;
     margin: auto;
@@ -412,27 +417,28 @@ a:hover:after {
 .donate_bottom {
     width: 44%;
     margin: auto;
-    margin-bottom: 4%;
     margin-top: 4%;
 }
 
-
-
-.item {
+.donate_top .item {
     cursor: pointer;
     width: 8vw;
     display: inline-block;
     margin-left: 5%;
 }
 
+
+.donate_bottom .item {
+    cursor: pointer;
+    width: 8vw;
+    display: inline-block;
+    margin-left: 6%;
+}
+
 .item img {
     width: 45%;
     margin-left: 26%;
     transition: all 0.3s 0.03s;
-}
-
-.item:hover img {
-    -webkit-filter: invert(60%);
 }
 
 .item p {
@@ -444,12 +450,21 @@ a:hover:after {
     margin-top: 4%;
 }
 
+.item:hover img {
+    -webkit-filter: invert(60%);
+    filter: invert(60%);
+}
+
+.item:hover p {
+    color: rgba(244, 81, 81, 0.83);
+}
+
 
 
 /*- - - - Fotter - - - -*/
 
 #fotter {
-    background: url('images/fotter_backround.jpg') no-repeat center;
+    background: url('images/fotter_backround.jpg') no-repeat left;
     background-size: cover;
     display: block;
 }
@@ -473,22 +488,20 @@ a:hover:after {
 }
 
 .fotter_content {
-    width: 100%;
     display: inline-block;
-    margin-top: 5%;
 }
 
 .fotter_content img,
 .fotter_adress img {
     float: left;
-    margin-right: 3%;
-    width: 9%;
+    margin-right: 2%;
+    width: 7%;
 }
 
 .fotter_adress img {
-    margin-top: 1%;
-    margin-right: 2%;
-    width: 4%;
+    margin-top: 1.5%;
+    margin-right: 0.5%;
+    width: 6%;
 }
 
 .fotter_content p,
