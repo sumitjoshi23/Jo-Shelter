@@ -121,6 +121,52 @@ a:hover:after {
 }
 
 
+
+/*- - - - About Us - - - -*/
+
+#about_us {
+    background-color: #fafafa;
+}
+
+.about_us_container {
+    width: 60%;
+    margin: auto;
+    padding-top: 2.3%;
+    padding-bottom: 2.3%;
+}
+
+.about_us_container img,
+.about_us_content {
+    display: inline-block;
+}
+
+.about_us_container img {
+        width: 30%;
+}
+
+.about_us_content {
+    width: 38%;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.about_us_content h4 {
+    color: #424141;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.07rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.about_us_content p {
+    color: #5a5959;
+    font-family: "ubuntu", sans-serif;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
 /*- - - - Content - - - -*/
 
 .banner_content {}

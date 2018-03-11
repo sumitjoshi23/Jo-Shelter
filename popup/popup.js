@@ -93,7 +93,7 @@ var dataController = (function () {
                 information: backup[position].information,
                 age: backup[position].age,
                 lifeSpan: backup[position].lifeSpan,
-                height: backup[position].disease,
+                height: backup[position].height,
                 gender: backup[position].gender
             }
         }
@@ -133,7 +133,7 @@ var UIController = (function () {
         document.querySelectorAll(DOMStrings.petULClass)[1].textContent = data.lifeSpan;
         document.querySelectorAll(DOMStrings.petULClass)[2].textContent = data.height;
         document.querySelectorAll(DOMStrings.petULClass)[3].textContent = data.gender;
-
+        console.log("height", data.gender);
     }
 
     /*UIController Return*/
