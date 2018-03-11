@@ -30,6 +30,7 @@
     width: 100%;
     padding-top: 3%;
     transition: all 0.3s;
+    z-index: 1000;
 }
 
 .navbar:hover {
@@ -319,7 +320,6 @@ a:hover:after {
     padding: 3.5% 13% !important;
     border-radius: 1.5rem;
     letter-spacing: 1px;
-    color: #525252;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -336,8 +336,9 @@ a:hover:after {
     padding: 0.8% 3% !important;
 }
 
-.get_to_know a {
+.get_to_know button a {
     text-decoration: none;
+    color: #525252;
 }
 
 .pets button:hover,
@@ -459,6 +460,73 @@ a:hover:after {
     color: rgba(244, 81, 81, 0.83);
 }
 
+
+
+/*- - - - Bank Donate - - - -*/
+
+section#donate_money {
+    background-color: #f6f6f6;
+}
+
+.donate_money_container {
+    width: 75%;
+    margin: auto;
+    padding: 3.5% 0;
+}
+
+.donate_money_container img {
+    display: inline-block;
+}
+
+.donate_money_content {
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+}
+
+.donate_money_content h4 {
+    font-family: 'montserrat', sans-serif;
+    font-size: 2rem;
+    color: #4c4c4c;
+    letter-spacing: 0.5px;
+    line-height: 2.1rem;
+}
+
+.donate_money_content h6 {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #5a5a5a;
+    font-weight: 600;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.bank_account {
+    width: 52%;
+    padding: 1% 4% 0px 4%;
+    background-color: #f2cdb3;
+    border-radius: 0.55rem;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+}
+
+.bank_account img {
+    width: 12%;
+    display: inline-block;
+}
+
+.bank_account p {
+    display: inline-block;
+    float: right;
+    line-height: 1.5rem;
+    color: black !important;
+}
+
+.donate_money_content p {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(80, 80, 80, 0.78);
+    font-size: 0.85rem;
+}
 
 
 /*- - - - Fotter - - - -*/
