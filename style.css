@@ -319,6 +319,10 @@ a:hover:after {
     padding: 0.8% 3% !important;
 }
 
+.get_to_know a {
+    text-decoration: none;
+}
+
 .pets button:hover , .get_to_know button:hover {
     /*background: linear-gradient(to right , #f45151, #f45151);*/
     background-color: #f1cdb3;
