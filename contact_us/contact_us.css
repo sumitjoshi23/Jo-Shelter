@@ -4,7 +4,6 @@
 }
 
 
-
 /*-- NAV --*/
 
 .navbar {
@@ -18,10 +17,8 @@
 }
 
 .navbar:hover {
-
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-
     background: #2d2322;
     /* Old browsers */
     background: -moz-linear-gradient(left, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
@@ -63,11 +60,11 @@
     text-decoration: none;
 }
 
-.logo:hover > h3 {
+.logo:hover>h3 {
     color: #ef7272;
 }
 
-.logo:hover > p {
+.logo:hover>p {
     color: #68b0f1;
 }
 
@@ -123,35 +120,16 @@ a:hover:after {
     background: #f45151;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contact_up {
-    position: relative;
     background-image: linear-gradient(to right bottom, rgba(125, 121, 121, 0.35), rgba(13, 8, 8, 0.75)), url(images/background.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 75vh;
 }
 
 .contact_up_txt {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 60%);
+    padding-top: 22%;
+    padding-bottom: 10%;
 }
 
 .contact_up_txt h2 {
@@ -160,12 +138,13 @@ a:hover:after {
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .contact_up_txt p {
     text-align: center;
     color: #e0e0e0;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: 'lato', sans-serif;
 }
 
@@ -211,7 +190,6 @@ a:hover:after {
     width: 8%;
     left: 8px;
     top: 16px;
-
 }
 
 .info input {
@@ -323,4 +301,90 @@ a:hover:after {
     position: absolute;
     margin-left: 2%;
     margin-top: 4.5%;
+}
+
+
+/*  responsive  */
+
+@media only screen and (min-width:280px) and (max-width:600px) {
+    .logo {
+        margin-left: 5.3%;
+    }
+    .logo h3 {
+        font-size: 0.8rem;
+    }
+    .logo p {
+        font-size: 7px;
+    }
+    .contact_up_txt {
+        padding-top: 36%;
+    }
+    .contact_up_txt h2 {
+        font-size: 2rem;
+        padding: 0px 10%;
+    }
+    .contact_up_txt p {
+        font-size: 0.65rem;
+    }
+    .contact_container h2 {
+        letter-spacing: -0.9px;
+        font-size: 1.85rem;
+    }
+    .contact_container p {
+        font-size: 0.8rem;
+        margin-bottom: 1.4rem;
+    }
+    .info {
+        display: block;
+        width: 100%;
+        margin-top: 3%;
+    }
+    .info img {
+        position: absolute;
+        width: 6%;
+        left: 18px;
+        top: 21px;
+    }
+    .contact_container_message img {
+        margin-top: 3.7%;
+        width: 6%;
+        left: 6.5%;
+        bottom: -2.6rem;
+    }
+    .info:not(:first-child) {
+        margin-left: 0px;
+    }
+    .contact_container_message textarea {
+        padding: 4.2% 13%;
+    }
+    .contact_container_message textarea {
+        width: 72.5%;
+    }
+    .contact_container form button {
+        display: block;
+        margin: auto;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    .fotter_contact h6,
+    .fotter_adress h6 {
+        font-size: 0.8rem;
+    }
+    .fotter_contact {
+        width: 48%;
+        margin-left: 5%;
+    }
+    .fotter_content p,
+    .fotter_adress p {
+        font-size: 0.6rem;
+    }
+    .adress p {
+    line-height: 0.65rem;
+}
+}
+
+@media only screen and (min-width:280px) and (max-width:800px) {
+    nav {
+        display: none;
+    }
 }
