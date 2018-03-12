@@ -336,7 +336,7 @@ a:hover:after {
     width: 32%;
     display: inline-block;
     position: absolute;
-    margin-left: 2%;
+    margin-left: 6%;
     margin-top: 4.5%;
 }
 
@@ -405,6 +405,21 @@ a:hover:after {
         margin-top: 4%;
         margin-bottom: 4%;
     }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 615px) {
+    .logo h3 {
+        font-size: 0.8rem;
+    }
+    .logo p {
+        font-size: 7px;
+    }
+    .contact_container_message img {
+        left: 18px;
+        width: 6%;
+        left: 20px;
+        top: 6%;
+    }
     .fotter_contact h6,
     .fotter_adress h6 {
         font-size: 0.8rem;
@@ -426,20 +441,8 @@ a:hover:after {
     .adress p {
         line-height: 0.65rem;
     }
-}
-
-@media only screen and (min-width: 280px) and (max-width: 600px) {
-    .logo h3 {
-        font-size: 0.8rem;
-    }
-    .logo p {
-        font-size: 7px;
-    }
-    .contact_container_message img {
-        left: 18px;
-        width: 6%;
-        left: 20px;
-        top: 6%;
+    .fotter_contact {
+        width: 31%;
     }
 }
 

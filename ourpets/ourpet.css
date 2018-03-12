@@ -134,15 +134,15 @@ a:hover:after {
 }
 
 .pet_row {
-    max-width: 65%;
-    /*background-color: red;*/
+    /*max-width: 65%;*/
+    max-width: 800px;
     display: block;
     margin: auto;
     margin-top: 2%;
 }
 
 .pets {
-    width: 23%;
+    width: 180px;
     display: inline-block;
     border-radius: 3%;
     color: white;
@@ -150,7 +150,8 @@ a:hover:after {
     transition: all 0.3s;
     cursor: pointer;
     padding-bottom: 1.5%;
-    margin-left: 1.5%;
+    margin-left: 2%;
+    margin-top: 3%;
 }
 
 .pets:hover {
@@ -343,7 +344,31 @@ a:hover:after {
 
 /* responsive */
 
-@media only screen and (min-width:280px) and (max-width:600px) {
+@media only screen and (min-width:280px) and (max-width:1024px) {
+    .logo {
+        margin-left: 5.3%;
+    }
+    .logo h3 {
+        font-size: 1.5rem;
+    }
+    .logo p {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 615px) {
+    .logo h3 {
+        font-size: 0.8rem;
+    }
+    .logo p {
+        font-size: 7px;
+    }
+    .contact_container_message img {
+        left: 18px;
+        width: 6%;
+        left: 20px;
+        top: 6%;
+    }
     .fotter_contact h6,
     .fotter_adress h6 {
         font-size: 0.8rem;
@@ -361,7 +386,30 @@ a:hover:after {
     .adress {
         margin-top: 8%;
     }
+
     .adress p {
         line-height: 0.65rem;
     }
+    .fotter_contact {
+        width: 31%;
+    }
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 480px) {
+
+    .pet_row {
+        width: 64% !important;
+    }
+
+    .pets {
+        width: 200px !important;
+        margin-left: 3% !important;
+        margin-top: 4% !important;
+    }
+
+    #our_pet_content {
+        background-color: #c59d9d;
+    }
+
 }
