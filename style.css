@@ -532,9 +532,13 @@ section#donate_money {
 /*- - - - Fotter - - - -*/
 
 #fotter {
-    background: url('images/fotter_backround.jpg') no-repeat left;
+    background: url('images/fotter_backround.jpg') no-repeat center;
     background-size: cover;
     display: block;
+}
+
+.fotter_container {
+    padding-bottom: 2%;
 }
 
 .fotter_contact {
@@ -568,8 +572,8 @@ section#donate_money {
 
 .fotter_adress img {
     margin-top: 1.5%;
-    margin-right: 0.5%;
-    width: 6%;
+    margin-right: 1%;
+    width: 4%;
 }
 
 .fotter_content p,
@@ -580,15 +584,46 @@ section#donate_money {
     font-size: 0.9rem;
 }
 
+.adress {
+    width: 200%;
+    margin-left: -1.5%;
+}
+
 .adress p {
     line-height: 1.3rem;
 }
 
 .fotter_adress {
     font-family: 'ubuntu', sans-serif;
-    width: 40%;
+    width: 32%;
     display: inline-block;
     position: absolute;
     margin-left: 2%;
     margin-top: 4.5%;
+}
+
+
+/*  responsive  */
+
+@media only screen and (min-width:280px) and (max-width:600px) {
+    .fotter_contact h6,
+    .fotter_adress h6 {
+        font-size: 0.8rem;
+        width: 110%;
+    }
+    .fotter_contact {
+        width: 48%;
+        margin-left: 2%;
+    }
+    .fotter_content p,
+    .fotter_adress p {
+        font-size: 0.6rem;
+        margin-top: -0.23%;
+    }
+    .adress {
+        margin-top: 8%;
+    }
+    .adress p {
+        line-height: 0.65rem;
+    }
 }
