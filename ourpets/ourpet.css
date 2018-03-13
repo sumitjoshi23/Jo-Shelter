@@ -142,7 +142,7 @@ a:hover:after {
 }
 
 .pets {
-    width: 180px;
+    width: 177px;
     display: inline-block;
     border-radius: 3%;
     color: white;
@@ -406,10 +406,6 @@ a:hover:after {
         width: 200px !important;
         margin-left: 3% !important;
         margin-top: 4% !important;
-    }
-
-    #our_pet_content {
-        background-color: #c59d9d;
     }
 
 }

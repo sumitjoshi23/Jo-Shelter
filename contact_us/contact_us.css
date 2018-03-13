@@ -264,6 +264,7 @@ a:hover:after {
     background-color: #7dcc7f;
     color: #f7f7f7;
     border-color: #f7f7f7;
+    box-shadow: 0px 7px 68px 2px #999999bd;
 }
 
 

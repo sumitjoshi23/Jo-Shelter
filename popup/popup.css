@@ -7,6 +7,7 @@
     font-family: 'Ubuntu', sans-serif;
 
 */
+
 /*
 body {
     background-color: #e8e8e8;
@@ -30,8 +31,7 @@ body {
 }
 
 .popup_container {
-    width: 75vw;
-    /*width: 82%;*/
+    width: 650px;
     float: left;
     background-color: #fefefe;
     border-radius: 0.45rem;
@@ -59,21 +59,22 @@ body {
 
 .petimage {
     display: inline-block;
+    width: 310px;
 }
 
 .petimage img {
-    width: 135%;
+    width: 270px;
     margin-top: 5%;
-    margin-bottom: 6%;
+    margin-left: 5%;
 }
 
 .pet_detail {
-    width: 60%;
+    width: 50%;
     display: inline-block;
     float: right;
     margin-right: 2%;
-    margin-top: 3.5%;
-    margin-bottom: 6%;
+    margin-top: 1.5%;
+    margin-bottom: 1.9%;
 }
 
 .pet_detail h4 {
@@ -91,7 +92,7 @@ body {
 .pet_detail p {
     color: #909090;
     font-family: 'Lato', sans-serif;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     letter-spacing: 0.6px;
     font-weight: 500;
     margin-top: 1.3%;
@@ -110,7 +111,7 @@ body {
     font-size: 1rem;
     overflow: none;
     position: relative;
-    margin-left: 4%;
+    margin-left: 5%;
     line-height: 1.45rem;
 }
 
@@ -119,7 +120,7 @@ body {
     color: #f1cdb3;
     font-size: 3.3rem;
     line-height: 0.9rem;
-    margin-left: -5%;
+    margin-left: -6%;
     position: absolute;
 }
 
