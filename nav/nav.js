@@ -1,6 +1,6 @@
 var yAxis;
 
-var scollAnimation = function () {
+var scollAnimation = function (event) {
     yAxis = scrollY
     if (yAxis < 40) {
         document.querySelector("nav").classList.remove("activeNav");
@@ -13,4 +13,11 @@ var scollAnimation = function () {
     }
 }
 
+document.querySelector(".menu").addEventListener("click", function(event) {
+    this.classList.toggle("activeMenu");
+})
+
 window.addEventListener("scroll", scollAnimation);
+
+
+
