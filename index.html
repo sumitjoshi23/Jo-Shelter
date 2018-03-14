@@ -9,29 +9,40 @@
     <link rel="stylesheet" href="popup/popup.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav/nav.css">
 </head>
 
 <body>
+   <header>
+        <div class="navbar">
+            <div class="logo">
+                <h3>Divine House</h3>
+                <p>Shelter for pets in India</p>
+            </div>
+
+            <nav>
+                <div class="nav_container">
+                    <a href="#">Home</a>
+                    <a href="ourpets/ourpet.html">our pets</a>
+                    <a href="#">to help us</a>
+                    <a href="contact_us/contact_us.html" class="active_nav">contact us</a>
+                </div>
+            </nav>
+
+            <div class="menu noSelect">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+    
     <section id="banner">
         <div class="banner_container">
-            <header>
-                <div class="navbar">
-                    <div class="logo">
-                        <h3>Divine House</h3>
-                        <p>Shelter for pets in India</p>
-                    </div>
-
-                    <nav>
-                        <a href="index.html" class="active_nav">Home</a>
-                        <a href="ourpets/ourpet.html">our pets</a>
-                        <a href="#">to help us</a>
-                        <a href="contact_us/contact_us.html">contact us</a>
-                    </nav>
-                </div>
-            </header>
             <div class="banner_content">
                 <div class="banner_content_container">
-                    <h4>Not only people <br> need a house</h4>
+                    <h4>Not only people need a house</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitor porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
                     <button>Make a Friend</button>
                 </div>
@@ -215,6 +226,7 @@
 
     <script src="script.js"></script>
     <script src="popup/popup.js"></script>
+    <script src="nav/nav.js"></script>
 </body>
 
 </html>

@@ -148,7 +148,7 @@ a:hover:after {
 }
 
 .about_us_container {
-    width: 55%;
+    width: 780px;
     margin: auto;
     padding-top: 2.3%;
     padding-bottom: 2.3%;
@@ -160,11 +160,11 @@ a:hover:after {
 }
 
 .about_us_container img {
-    width: 30%;
+    width: 215px;
 }
 
 .about_us_content {
-    width: 38%;
+    width: 552px;
     position: absolute;
     margin-top: 2%;
     margin-left: 3%;
@@ -204,6 +204,7 @@ a:hover:after {
     word-spacing: 2.5px;
     line-height: 3.1rem;
     text-align: left;
+    padding-right: 65%;
 }
 
 .banner_content p {
@@ -212,7 +213,7 @@ a:hover:after {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     text-align: left;
-    width: 43%;
+    padding-right: 60%;
 }
 
 .banner_content button {
@@ -605,7 +606,115 @@ section#donate_money {
 
 /*  responsive  */
 
+@media only screen and (min-width:280px) and (max-width:1024px) {
+    /* logo */
+    .logo {
+        margin-left: 5.3%;
+    }
+    .logo h3 {
+        font-size: 1.5rem;
+    }
+    .logo p {
+        font-size: 11px;
+    }
+    nav {
+        margin-right: 5.5%;
+    }
+    .banner_content p {
+        padding-right: 54%;
+    }
+    .banner_content h4 {
+        padding-right: 58%;
+    }
+
+    /* about us */
+    .about_us_container {
+        width: 630px;
+    }
+    .about_us_container img {
+        width: 175px;
+    }
+    .about_us_content {
+        width: 376px;
+    }
+    .about_us_content h4 {
+        font-size: 25px;
+    }
+    .about_us_content p {
+        font-size: 0.72rem;
+    }
+
+}
+
+@media only screen and (min-width:280px) and (max-width:800px) {
+
+    /* banner */
+    #banner {
+        background: url(images/background_banner.jpg) no-repeat left;
+    }
+    .banner_content_container {
+            padding: 35% 0px 3% 0%;
+    }
+    .banner_content h4 {
+        text-align: center;
+        line-height: 2.8rem;
+        padding-right: 0;
+        font-size: 31px;
+    }
+    .banner_content p {
+        display: block;
+        text-align: center;
+        padding: 0 16%;
+        font-size: 10px;
+    }
+    .banner_content button {
+        margin: auto;
+        display: block;
+        padding: 1.5% 9%;
+    }
+
+    /* about us */
+    .about_us_container img {
+        width: 170px;
+    }
+
+    .about_us_content {
+        width: 353px;
+    }
+    .about_us_container {
+        width: 555px;
+    }
+    .about_us_content p {
+        font-size: 12px;
+    }
+    .about_us_content {
+        margin-top: 0%;
+    }
+
+}
+
+
 @media only screen and (min-width:280px) and (max-width:600px) {
+
+
+    /* about us */
+    .about_us_container {
+        width: 420px;
+    }
+    .about_us_container img {
+        width: 155px;
+    }
+    .about_us_content {
+        width: 246px;
+    }
+    .about_us_content h4 {
+        font-size: 20px;
+    }
+    .about_us_content p {
+        font-size: 10px;
+    }
+
+    /* fotter */
     .fotter_contact h6,
     .fotter_adress h6 {
         font-size: 0.8rem;
@@ -626,4 +735,32 @@ section#donate_money {
     .adress p {
         line-height: 0.65rem;
     }
+}
+
+
+@media only screen and (min-width:280px) and (max-width:600px) {
+
+    /* banner */
+    .banner_content h4 {
+        font-size: 24px;
+    }
+
+    /* about us */
+    .about_us_container {
+        width: 340px;
+    }
+    .about_us_container img {
+        width: 110px;
+    }
+    .about_us_content {
+        width: 207px;
+    }
+    .about_us_content h4 {
+        font-size: 16px;
+    }
+    .about_us_content p {
+        font-size: 7.5px;
+        margin-top: 8px;
+    }
+
 }
