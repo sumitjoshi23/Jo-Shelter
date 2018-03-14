@@ -397,7 +397,7 @@ a:hover:after {
         padding-top: 1.5% !important;
         padding-bottom: 1.5% !important;
     }
-    
+
     .logo {
         margin-left: 4% !important;
     }
@@ -410,6 +410,15 @@ a:hover:after {
         cursor: pointer;
         margin: 10px 30px 2px 0px;
         z-index: 1000;
+    }
+
+    .noSelect {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     .menu span {
         width: 100%;
@@ -459,7 +468,8 @@ a:hover:after {
         width: 100%;
         height: 100vh;
         background-color: rgba(29, 29, 29, 0.96);
-        background-color: rgba(39, 25, 25, 0.96);;
+        background-color: rgba(39, 25, 25, 0.96);
+        ;
         float: none;
         margin-right: 0px;
         margin-top: 0px;
@@ -492,7 +502,8 @@ a:hover:after {
         padding: 5px 0;
         border-bottom: 2px solid #94bfff;
         text-transform: uppercase;
-        background-color: #2b1f1f;;
+        background-color: #2b1f1f;
+        ;
         background-size: 100%;
         transition: all 0.3s ease-out;
     }
@@ -521,6 +532,9 @@ a:hover:after {
     }
 
     /* fotter */
+    .fotter_content {
+        width: 150px;
+    }
     .fotter_contact h6,
     .fotter_adress h6 {
         font-size: 0.8rem;
@@ -543,5 +557,8 @@ a:hover:after {
     }
     .fotter_contact {
         width: 31%;
+    }
+    .fotter_adress {
+        margin-left: 8%;
     }
 }
