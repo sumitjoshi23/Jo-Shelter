@@ -20,7 +20,7 @@ var dataController = (function () {
         },
         {
             name: "Jennifer",
-            breed: "golden retriever pup",
+            breed: "Golden retriever pup",
             information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh",
             age: "2 Months",
             lifeSpan: "10-12 years",

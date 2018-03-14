@@ -353,14 +353,7 @@ a:hover:after {
 
 /* responsive */
 
-@media only screen and (min-width:280px) and (max-width:1000px) {
-
-
-
-
-
-    /*
-    
+@media only screen and (min-width:280px) and (max-width:1024px) {
     .logo {
         margin-left: 5.3%;
     }
@@ -370,86 +363,6 @@ a:hover:after {
     .logo p {
         font-size: 11px;
     }
-    
-    
-    
-    */
-    /* logo */
-    .navbar {
-        padding-bottom: 1%;
-    }
-    .logo h3 {
-        font-size: 1.1rem;
-    }
-
-    .logo p {
-        font-size: 8px;
-    }
-
-    /* nav */
-    nav {
-
-        margin-right: 4%;
-    }
-
-    nav a {
-        font-size: 0.85rem;
-        margin-left: 1.5rem;
-    }
-
-
-    .pet_row {
-        max-width: 587px;
-    }
-
-    /* content */
-    .our_pet_title h4 {
-        margin-top: 1%;
-        font-size: 23px;
-    }
-    .pets img {
-        width: 92%;
-        padding: 8%;
-    }
-    .pets p {
-        font-size: 1.2rem;
-    }
-    .pets button {
-        font-size: 0.7rem;
-    }
-    .pets:last-child {
-        display: inline-block;
-    }
-
-    /* circles */
-    .page_container {
-        margin-top: 4.5%;
-        margin-bottom: 2%;
-    }
-    .page_container span {
-        height: 1.8rem;
-        width: 1.8rem;
-    }
-    .page_container span p {
-        font-size: 0.8rem;
-    }
-    .active_circle {
-        background-color: #f1cdb38f;
-        border: 2px solid rgba(244, 71, 71, 0.84) !important;
-    }
-
-
-    .page_container span:not(.active_circle) {
-        background-color: #f1cdb3;
-        border: 2px solid rgba(120, 232, 117, 0.81);
-    }
-
-
-
-
-
-
-
 
     .contact_container_message img {
         left: 18px;
@@ -458,9 +371,9 @@ a:hover:after {
         top: 6%;
     }
     .fotter_adress img {
-        margin-top: 4px;
-        margin-right: 1%;
-    }
+    margin-top: 4px;
+    margin-right: 1%;
+}
     .fotter_contact h6,
     .fotter_adress h6 {
         font-size: 1.2rem;
@@ -489,9 +402,6 @@ a:hover:after {
         width: 31%;
     }
 }
-
-
-
 
 @media only screen and (min-width: 280px) and (max-width: 615px) {
     .logo h3 {
@@ -533,7 +443,10 @@ a:hover:after {
 }
 
 
-@media only screen and (min-width: 280px) and (max-width: 760px) {}
+@media only screen and (min-width: 280px) and (max-width: 760px) {
+    
+    
+}
 
 
 @media only screen and (min-width: 280px) and (max-width: 480px) {}
