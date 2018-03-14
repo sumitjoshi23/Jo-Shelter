@@ -16,28 +16,6 @@
     z-index: 1000;
 }
 
-.navbar:hover {
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    background: #2d2322;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44352d', endColorstr='#1a1a1c', GradientType=1);
-    /* IE6-9 */
-}
-
-.navbar:hover .logo {
-    margin-left: 4%;
-}
-
-.navbar:hover nav {
-    margin-right: 6%;
-}
 
 .logo {
     font-family: 'Roboto', sans-serif;
@@ -47,8 +25,6 @@
     text-decoration: none;
     transition: all 0.3s 0.1s;
 }
-
-
 
 .logo h3 {
     text-transform: capitalize;
@@ -71,11 +47,11 @@
     text-decoration: none;
 }
 
-.logo:hover > h3 {
+.logo:hover>h3 {
     color: #ef7272;
 }
 
-.logo:hover > p {
+.logo:hover>p {
     color: #68b0f1;
 }
 
@@ -154,7 +130,7 @@ a:hover:after {
 }
 
 .contact_up_txt h2 span {
-    color: #6eb2bd;
+    color: #6adcef;
 }
 
 .contact_up_txt p {
@@ -344,11 +320,14 @@ a:hover:after {
 
 /*  responsive  */
 
+
 /* max width formobile is 600px & max width for tablet is 1024px*/
+
 
 /*@media only screen and (min-width:280px) and (max-width:600px) {*/
 
 @media only screen and (min-width:280px) and (max-width:1024px) {
+    /* logo */
     .logo {
         margin-left: 5.3%;
     }
@@ -358,6 +337,7 @@ a:hover:after {
     .logo p {
         font-size: 11px;
     }
+    /* Banner Content */
     .contact_up_txt {
         padding-top: 36%;
     }
@@ -409,6 +389,7 @@ a:hover:after {
 }
 
 @media only screen and (min-width: 280px) and (max-width: 615px) {
+    /* logo */
     .logo h3 {
         font-size: 0.8rem;
     }
@@ -421,6 +402,7 @@ a:hover:after {
         left: 20px;
         top: 6%;
     }
+    /* fotter */
     .fotter_contact h6,
     .fotter_adress h6 {
         font-size: 0.8rem;
@@ -438,7 +420,6 @@ a:hover:after {
     .adress {
         margin-top: 8%;
     }
-
     .adress p {
         line-height: 0.65rem;
     }
