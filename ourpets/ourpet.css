@@ -305,6 +305,7 @@ a:hover:after {
 
 .fotter_content {
     display: inline-block;
+    width: 113%;
 }
 
 .fotter_content img,
@@ -528,14 +529,40 @@ a:hover:after {
     .pets:last-child {
         display: none;
     }
+    /* fotter */
+    .fotter_contact {
+        margin-left: 14%;
+    }
+    .fotter_content img,
+    .fotter_adress img {
+        width: 4%;
+    }
+    .fotter_contact h6,
+    .fotter_adress h6 {
+        font-size: 0.6rem;
+        width: 110%;
+    }
+    .fotter_content p,
+    .fotter_adress p {
+        font-size: 0.35rem;
+    }
 }
 
 @media only screen and (min-width: 282px) and (max-width: 400px) {
+    /* pets */
+    .our_pet_title h4 {
+        font-size: 16px;
+    }
     .pets {
         width: 125px;
     }
     .pet_row {
         max-width: 270px;
+    }
+    /*fotter*/
+    .fotter_content img,
+    .fotter_adress img {
+        width: 6%;
     }
 }
 
