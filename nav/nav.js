@@ -13,8 +13,9 @@ var scollAnimation = function (event) {
     }
 }
 
-document.querySelector(".menu").addEventListener("click", function(event) {
+document.querySelector(".menu").addEventListener("click", function() {
     this.classList.toggle("activeMenu");
+    document.querySelector("nav").classList.toggle("navOnOff");
 })
 
 window.addEventListener("scroll", scollAnimation);

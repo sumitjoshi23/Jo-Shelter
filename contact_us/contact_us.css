@@ -107,115 +107,6 @@ a:hover:after {
     background: #f45151;
 }
 
-
-/* = = =  Menu = = = */
-
-.menu {
-    width: 45px;
-    
-    position: fixed;
-    right: 0px;
-    cursor: pointer;
-    margin: 1px 45px 2px 0px;
-    z-index: 1000;
-}
-
-.menu span {
-    width: 100%;
-    height: 5px;
-    display: block;
-    background-color: #ef3131;
-    margin: 8px 0px;
-    border-radius: 5px;
-    transition: all 0.35s 0.05s;
-}
-
-.menu:hover span:nth-child(2) {
-    transition: all 0.5s 0.2s;
-    width: 60%;
-}
-
-.menu:hover span:last-child {
-    width: 40%;
-}
-
-.activeMenu span:first-child {
-    transform: translate(0%, 260%) rotate(45deg);
-    width: 100%;
-}
-
-.activeMenu span:nth-child(2) {
-    opacity: 0;
-    margin-left: 120%;
-    width: 100%;
-}
-
-.activeMenu span:last-child {
-    transform: translate(0%, -260%) rotate(-45deg);
-    width: 100%;
-}
-
-.activeMenu:hover span:last-child {
-    width: 100%;
-}
-
-nav {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(29, 29, 29, 0.96);
-    float: none;
-    margin-right: 0px;
-    margin-top: 0px;
-    transition: all 0.3s 0.1s;
-    z-index: 500;
-}
-
-.nav_container {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-nav a:first-child {
-    border-top: 2px solid #94bfff;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    margin: 0px;
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    padding: 5px 0;
-    border-bottom: 2px solid #94bfff;
-    text-transform: uppercase;
-    background-color: #181818;
-    background-size: 100%;
-    transition: all 0.3s ease-out;
-}
-
-nav a:hover {
-    text-decoration: none;
-    background-color: #f64747;
-    color: white;
-    background-size: 0% 200%;
-}
-
-.active_nav {
-    text-decoration: none !important;
-}
-
-.active_nav:after {
-    display: none;
-}
-
-
-/*== menu under ==*/
-
 .contact_up {
     background-image: linear-gradient(to right bottom, rgba(125, 121, 121, 0.35), rgba(13, 8, 8, 0.75)), url(images/background.jpg);
     background-position: top;
@@ -499,6 +390,120 @@ nav a:hover {
     }
 }
 
+@media only screen and (min-width:280px) and (max-width:800px) {
+    nav {
+        visibility: hidden;
+    }
+    /* = = =  Menu = = = */
+    .menu {
+        width: 40px;
+        position: fixed;
+        right: 0px;
+        cursor: pointer;
+        margin: 1px 45px 2px 0px;
+        z-index: 1000;
+    }
+    .menu span {
+        width: 100%;
+        height: 4px;
+        display: block;
+        background-color: #ef3131;
+        margin: 0px;
+        border-radius: 5px;
+        transition: all 0.35s;
+    }
+    .menu span:nth-child(2) {
+        width: 60%;
+        margin: 6px 0px;
+        transition: all 0.45s cubic-bezier(0.58, -1, 0.25, 1);
+    }
+    .menu span:last-child {
+        width: 85%;
+        margin: 6px 0px;
+        transition: all 0.35s;
+    }
+    .menu:hover span:nth-child(2) {
+        width: 100%;
+    }
+    .menu:hover span:last-child {
+        width: 100%;
+    }
+    .activeMenu span:first-child {
+        transform: translate(0%, 260%) rotate(40deg);
+        width: 100%;
+    }
+    .activeMenu span:nth-child(2) {
+        opacity: 0;
+        margin-left: 120%;
+        width: 100%;
+    }
+    .activeMenu span:last-child {
+        transform: translate(0%, -260%) rotate(-40deg);
+        width: 100%;
+    }
+    .activeMenu:hover span:last-child {
+        width: 100%;
+    }
+    nav {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(29, 29, 29, 0.96);
+        float: none;
+        margin-right: 0px;
+        margin-top: 0px;
+        z-index: 500;
+        visibility: hidden;
+        opacity: 0;
+        top: -40%;
+        transition: all 0.3s 0.1s cubic-bezier(0.4, 0, 1, 1);;
+    }
+    .navOnOff {
+        visibility: visible;
+        opacity: 1;
+        top: 50%;
+    }
+    .nav_container {
+        position: relative;
+        top: 50%;
+        /*left: 95%;*/
+        /*top: -40%;*/
+        transform: translateY(-50%);
+    }
+    nav a:first-child {
+        border-top: 2px solid #94bfff;
+    }
+    nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        padding: 5px 0;
+        border-bottom: 2px solid #94bfff;
+        text-transform: uppercase;
+        background-color: #181818;
+        background-size: 100%;
+        transition: all 0.3s ease-out;
+    }
+    nav a:hover {
+        text-decoration: none;
+        background-color: #f64747;
+        color: white;
+        background-size: 0% 200%;
+    }
+    .active_nav {
+        text-decoration: none !important;
+    }
+    .active_nav:after {
+        display: none;
+    }
+    /*== menu over ==*/
+}
+
 @media only screen and (min-width: 280px) and (max-width: 615px) {
     /* logo */
     .logo h3 {
@@ -512,6 +517,56 @@ nav a:hover {
         width: 6%;
         left: 20px;
         top: 6%;
+    }
+    /*= = Menu = =  & animation */
+    .menu {
+        width: 25px;
+        position: fixed;
+        right: 0px;
+        cursor: pointer;
+        margin: 1px 45px 2px 0px;
+        z-index: 1000;
+    }
+    .menu span {
+        width: 100%;
+        height: 3px;
+        display: block;
+        background-color: #ef3131;
+        margin: 0px;
+        border-radius: 5px;
+        transition: all 0.35s;
+    }
+    .menu span:nth-child(2) {
+        width: 60%;
+        margin: 4px 0px;
+        transition: all 0.45s cubic-bezier(0.58, -1, 0.25, 1);
+    }
+    .menu span:last-child {
+        width: 85%;
+        margin: 4px 0px;
+        transition: all 0.35s;
+    }
+    .menu:hover span:nth-child(2) {
+        width: 100%;
+    }
+    .menu:hover span:last-child {
+        width: 100%;
+    }
+    .activeMenu span:first-child {
+        transform: translate(0%, 200%) rotate(50deg);
+        width: 100%;
+    }
+    .activeMenu span:nth-child(2) {
+        opacity: 0;
+        margin-left: 120%;
+        width: 100%;
+    }
+    .activeMenu span:last-child {
+        transform: translate(0%, -290%) rotate(-50deg);
+        width: 100%;
+    }
+    .activeMenu:hover span:last-child {
+        width: 100%;
     }
     /* fotter */
     .fotter_contact h6,
@@ -536,11 +591,5 @@ nav a:hover {
     }
     .fotter_contact {
         width: 31%;
-    }
-}
-
-@media only screen and (min-width:280px) and (max-width:800px) {
-    nav {
-        display: none;
     }
 }
