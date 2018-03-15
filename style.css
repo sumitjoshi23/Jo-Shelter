@@ -866,6 +866,29 @@ section#donate_money {
         padding: 1.2% 5%;
     }
 
+    /* pets */
+    .pet_row {
+        width: 280px;
+    }
+    .pets {
+            box-shadow: 0px 2px 11px 0px rgba(181, 181, 181, 0.8);
+    }
+    .pets:nth-child(2) {
+        margin-left: 1%;
+    }
+
+    /* arrows */
+    .arrows {
+        width: 340px;
+    }
+    .backward_arrow,
+    .forward_arrow {
+        padding: 1.6% 1%;
+    }
+    .get_to_know button {
+        font-size: 9px;
+    }
+
     /* about us */
     .about_us_content {
         width: 201px;
