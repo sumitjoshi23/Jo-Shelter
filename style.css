@@ -219,12 +219,12 @@ a:hover:after {
     letter-spacing: 1.1px;
     color: #2a2a2a;
     cursor: pointer;
+    background-size: 100% 200%;
     transition: all 0.3s ease-out;
 }
 
 .banner_content button:hover {
-    background-color: #ba8c62;
-    background: linear-gradient(to right, #ba8c62, #ba8c62);
+    background-size: 200% 100%;
 }
 
 
@@ -538,7 +538,8 @@ section#donate_money {
 
 #fotter {
     display: block;
-    background: url('images/fotter_backround.jpg') no-repeat left;
+    background: url('images/background-color.jpg') no-repeat left;
+    background-size: cover;
     position: relative;
 }
 
@@ -927,6 +928,9 @@ section#donate_money {
 
 @media only screen and (min-width:280px) and (max-width:600px) {
     /* banner */
+    #banner {
+        background-image: linear-gradient(to right bottom, rgba(125, 121, 121, 0.35), rgba(13, 8, 8, 0.75)), url('images/background_banner_low.jpg');
+    }
     .banner_content h4 {
         font-size: 24px;
     }
@@ -936,6 +940,7 @@ section#donate_money {
     }
     .about_us_container img {
         width: 155px;
+        content:url("images/aboutus_low.png");
     }
     .about_us_content {
         width: 246px;
@@ -958,6 +963,15 @@ section#donate_money {
     }
     .pet_row .pets:last-child {
         display: none;
+    }
+    #ourpet1 {
+        content: url('ourpets/image/1_low.png');
+    }
+    #ourpet2 {
+        content: url('ourpets/image/2_low.png');
+    }
+    #ourpet3 {
+        content: url('ourpets/image/3_low.png');
     }
     .pets {
         width: 134px;
@@ -1027,13 +1041,25 @@ section#donate_money {
     .donate_bottom .item:nth-child(2) {
         margin-left: 0px;
     }
+    
+    /* donate-bank */
+    
+    .donate_money_container img {
+        content: url('images/donate_low.png');
+    }
 
     /* fotter */
+    #fotter {
+        background-image: url('images/background-color_low.jpg');
+    }
     #fotter #fotter_dog {
         width: 88px;
     }
     .fotter_container {
         width: 400px;
+    }
+    #fotter_dog {
+        content: url('images/fotter_dog_low.png');
     }
 }
 
