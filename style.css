@@ -11,6 +11,8 @@
 * {
     padding: 0;
     margin: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 
@@ -212,7 +214,7 @@ a:hover:after {
     background: linear-gradient(to right, #ef5f5f, #ba8c62);
     border: none;
     font-weight: bolder;
-    padding: 1% 2%;
+    padding: 1.2% 4.5%;
     border-radius: 1.5rem;
     letter-spacing: 1.1px;
     color: #2a2a2a;
@@ -460,7 +462,7 @@ a:hover:after {
 }
 
 .item:hover p {
-    color: rgba(53, 216, 14, 0.93);
+    color: #29b008;
 }
 
 
@@ -537,13 +539,13 @@ section#donate_money {
 #fotter {
     display: block;
     background: url('images/fotter_backround.jpg') no-repeat left;
+    position: relative;
 }
 
 .fotter_container {
     width: 975px;
     margin: auto;
     padding: 5% 0px;
-    position: relative;
 }
 
 .fotter_contact {
@@ -552,7 +554,7 @@ section#donate_money {
 }
 
 .fotter_contact h6 {
-    color: white;
+    color: #eaeaea;
     font-size: 28px;
     display: inline-block;
 }
@@ -569,7 +571,7 @@ section#donate_money {
 }
 
 .fotter_content p {
-    color: white;
+    color: #f7dab6;
 }
 
 .fotter_adress {
@@ -580,7 +582,7 @@ section#donate_money {
 }
 
 .fotter_adress h6 {
-    color: white;
+    color: #eaeaea;
     font-size: 30px;
 }
 
@@ -592,7 +594,7 @@ section#donate_money {
 
 .fotter_adress p {
     line-height: 32px;
-    color: white;
+    color: #f7dab6;
 }
 
 
@@ -601,7 +603,7 @@ section#donate_money {
     width: 182px;
     position: absolute;
     bottom: 0px;
-    right: -15px;
+    right: 0px;
     z-index: 3;
 }
 
@@ -707,10 +709,8 @@ section#donate_money {
 
     /* fotter */
     .fotter_container {
-        width: 768px;
+        width: 690px;
         padding: 3.5% 0px;
-        margin-left: 1%;
-        margin-right: 0px;
     }
     .fotter_contact {
         width: 344px;
@@ -747,9 +747,6 @@ section#donate_money {
     }
     #fotter #fotter_dog {
         width: 130px;
-        position: absolute;
-        bottom: 0px;
-        right: -4px;
     }
 }
 
@@ -810,7 +807,7 @@ section#donate_money {
     }
     /* arrows */
     .arrows {
-        width: 589px;
+        width: 580px;
     }
     .backward_arrow p,
     .forward_arrow p {
@@ -887,7 +884,7 @@ section#donate_money {
 
     /* fotter */
     .fotter_container {
-        width: 564px;
+        width: 404px;
         padding: 3.5% 0px;
         margin: auto;
     }
@@ -924,9 +921,6 @@ section#donate_money {
     }
     #fotter #fotter_dog {
         width: 105px;
-        position: absolute;
-        bottom: 0px;
-        right: -4px;
     }
 
 }
@@ -1037,7 +1031,6 @@ section#donate_money {
     /* fotter */
     #fotter #fotter_dog {
         width: 88px;
-        right: 111px;
     }
     .fotter_container {
         width: 400px;
@@ -1181,4 +1174,37 @@ section#donate_money {
     }
 
     /* fotter */
+    .fotter_container {
+        width: 312px;
+    }
+    .fotter_contact {
+        width: 170px;
+    }
+    .fotter_contact h6 {
+        font-size: 9px;
+    }
+    .fotter_contact img {
+        width: 14px;
+    }
+    .fotter_content p {
+        font-size: 7px;
+        margin-top: 1%;
+        line-height: 16px;
+    }
+
+    .fotter_adress h6 {
+        font-size: 9px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .fotter_adress p {
+        line-height: 8px;
+        font-size: 6px;
+    }
+    #fotter #fotter_dog {
+        width: 66px;
+    }
+    .fotter_adress img {
+        width: 15px;
+    }
 }
