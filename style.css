@@ -31,23 +31,7 @@
     padding-top: 3%;
     transition: all 0.3s;
     z-index: 1000;
-}
-
-.navbar:hover {
-
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-
-    background: #2d2322;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44352d', endColorstr='#1a1a1c', GradientType=1);
-    /* IE6-9 */
+    transition: all 0.3s;
 }
 
 .logo {
@@ -56,12 +40,13 @@
     float: left;
     margin-left: 10.3%;
     text-decoration: none;
+    transition: all 0.3s;
 }
 
 .logo h3 {
     text-transform: capitalize;
     text-decoration: none;
-    color: #ffdcc0;
+    color: #f4987d;
     font-size: 1.6rem;
     letter-spacing: 1px;
     word-spacing: 4px;
@@ -91,6 +76,7 @@ nav {
     float: right;
     margin-top: 0.7%;
     margin-right: 11.5%;
+    transition: all 0.3s;
 }
 
 nav a {
@@ -251,14 +237,14 @@ a:hover:after {
 .our_pet_content_container h4,
 #donate .donate_container h4 {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     color: #6b6b6b;
     display: block;
     margin: auto;
 }
 
 .pet_row {
-    width: 50%;
+    width: 718px;
     display: block;
     margin: auto;
     margin-top: 3.5%;
@@ -335,6 +321,8 @@ a:hover:after {
 
 .get_to_know button {
     padding: 0.8% 3% !important;
+    font-family: 'Lato', sans-serif;
+    background-color: #f1cdb3;
 }
 
 .get_to_know button a {
@@ -348,6 +336,10 @@ a:hover:after {
     background-color: #f1cdb3;
 }
 
+.get_to_know button:hover {
+    background-color: white;
+}
+
 
 
 /* Arrows */
@@ -358,7 +350,7 @@ a:hover:after {
 }
 
 .arrows {
-    width: 64%;
+    width: 900px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -629,7 +621,7 @@ section#donate_money {
 
     /* about us */
     .about_us_container {
-        width: 630px;
+        width: 585px;
     }
     .about_us_container img {
         width: 175px;
@@ -644,33 +636,69 @@ section#donate_money {
         font-size: 0.72rem;
     }
 
+    /* pets */
+    .pet_row {
+        width: 645px;
+    }
+    .our_pet_content_container h4,
+    #donate .donate_container h4 {
+        font-size: 27px;
+    }
+    .pets {
+        width: 190px;
+    }
+    .pets p {
+        font-size: 23px;
+    }
+    .pets button {
+        padding: 2.5% 10% !important;
+        font-size: 13px;
+    }
+    .get_to_know button {
+        padding: 1.1% 5% !important;
+        font-size: 14px;
+    }
+
+    /* arrows */
+    .arrows {
+        width: 745px;
+    }
+
+    /* donate */
+    .donate_money_container {
+        display: none;
+    }
+
+
 }
 
 @media only screen and (min-width:280px) and (max-width:800px) {
 
     /* banner */
     #banner {
-        background: url(images/background_banner.jpg) no-repeat left;
+        background-image: linear-gradient(to right bottom, rgba(125, 121, 121, 0.35), rgba(13, 8, 8, 0.75)), url("images/background_banner.jpg");
     }
     .banner_content_container {
-            padding: 35% 0px 3% 0%;
+        padding: 23% 0px 5% 0%;
     }
     .banner_content h4 {
         text-align: center;
         line-height: 2.8rem;
         padding-right: 0;
         font-size: 31px;
+        margin-bottom: 5%;
     }
     .banner_content p {
         display: block;
         text-align: center;
-        padding: 0 16%;
-        font-size: 10px;
+        padding: 0 17%;
+        font-size: 13px;
+        margin-bottom: 6%;
     }
     .banner_content button {
         margin: auto;
         display: block;
-        padding: 1.5% 9%;
+        padding: 1.3% 6%;
     }
 
     /* about us */
@@ -679,16 +707,44 @@ section#donate_money {
     }
 
     .about_us_content {
-        width: 353px;
+        width: 330px;
     }
     .about_us_container {
-        width: 555px;
+        width: 520px;
+    }
+    .about_us_content h4 {
+        letter-spacing: 0.6px;
+        line-height: 25px;
     }
     .about_us_content p {
-        font-size: 12px;
+        font-size: 11px;
     }
     .about_us_content {
         margin-top: 0%;
+    }
+
+    /* pets */
+    .pets {
+        width: 160px;
+        margin-left: 1.2%;
+    }
+    .pet_row {
+        width: 516px;
+    }
+    /* arrows */
+    .arrows {
+        width: 589px;
+    }
+    .backward_arrow p,
+    .forward_arrow p {
+        line-height: 1rem;
+        font-size: 30px;
+    }
+
+
+    .backward_arrow,
+    .forward_arrow {
+        padding: 1.4% 1%;
     }
 
 }
@@ -696,6 +752,10 @@ section#donate_money {
 
 @media only screen and (min-width:280px) and (max-width:600px) {
 
+    /* banner */
+    .banner_content h4 {
+        font-size: 24px;
+    }
 
     /* about us */
     .about_us_container {
@@ -712,7 +772,45 @@ section#donate_money {
     }
     .about_us_content p {
         font-size: 10px;
+        margin-top: 8px;
     }
+
+    /* pets */
+    .our_pet_content_container h4,
+    #donate .donate_container h4 {
+        font-size: 20px;
+    }
+    .pet_row .pets:last-child {
+        display: none;
+    }
+    .pets {
+        width: 134px;
+    }
+    .pets:nth-child(2) {
+        margin-left: 5%;
+    }
+    .pet_row {
+        width: 295px;
+    }
+    .pets p {
+        font-size: 16px;
+    }
+    .pets button {
+        padding: 0px 10% !important;
+        font-size: 9px;
+        line-height: 16px;
+    }
+    .get_to_know button {
+        padding: 0% 4% !important;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* arrows */
+    .arrows {
+        width: 393px;
+    }
+
 
     /* fotter */
     .fotter_contact h6,
@@ -738,29 +836,57 @@ section#donate_money {
 }
 
 
-@media only screen and (min-width:280px) and (max-width:600px) {
+@media only screen and (min-width:280px) and (max-width:480px) {
+
+    /* nav */
+    .logo h3 {
+        font-size: 20px;
+    }
+    .logo p {
+        font-size: 9px;
+    }
+    .menu {
+        margin: 4px 30px 2px 0px !important;
+    }
 
     /* banner */
+    .banner_content_container {
+        padding: 35% 0px 8% 0%;
+    }
     .banner_content h4 {
-        font-size: 24px;
+        font-size: 22px;
+        letter-spacing: 0px;
+    }
+    .banner_content p {
+        font-size: 9px;
+        margin-bottom: 5.5%;
+        padding: 0 17%;
+    }
+    .banner_content button {
+        padding: 1.2% 5%;
     }
 
     /* about us */
+    .about_us_content {
+        width: 201px;
+        margin: auto;
+        margin-top: 2%;
+        margin-left: 1%;
+    }
     .about_us_container {
         width: 340px;
+        padding: 5% 0px;
     }
     .about_us_container img {
-        width: 110px;
-    }
-    .about_us_content {
-        width: 207px;
+        width: 128px;
     }
     .about_us_content h4 {
-        font-size: 16px;
+        font-size: 17px;
+        line-height: 18px;
     }
     .about_us_content p {
-        font-size: 7.5px;
-        margin-top: 8px;
+        font-size: 8.1px;
+        margin-top: 2px;
     }
 
 }
