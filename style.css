@@ -868,22 +868,32 @@ section#donate_money {
 
     /* pets */
     .pet_row {
-        width: 280px;
+        width: 300px;
     }
     .pets {
-            box-shadow: 0px 2px 11px 0px rgba(181, 181, 181, 0.8);
+        box-shadow: 0px 2px 11px 0px rgba(181, 181, 181, 0.8);
     }
     .pets:nth-child(2) {
-        margin-left: 1%;
+        margin-left: 5%;
     }
 
     /* arrows */
     .arrows {
-        width: 340px;
+        width: 255px;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 77%);
     }
     .backward_arrow,
     .forward_arrow {
         padding: 1.6% 1%;
+        background-color: rgba(241, 205, 179, 0.88);
+    }
+    .backward_arrow p,
+    .forward_arrow p {
+        color: #767676;
+        width: 18px;
     }
     .get_to_know button {
         font-size: 9px;
