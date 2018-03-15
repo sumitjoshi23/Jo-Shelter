@@ -848,6 +848,9 @@ section#donate_money {
     .menu {
         margin: 4px 30px 2px 0px !important;
     }
+    .activeNavbar {
+        box-shadow: 0px 2px 20px -1px rgba(28, 28, 28, 0.82);
+    }
 
     /* banner */
     .banner_content_container {
@@ -894,6 +897,9 @@ section#donate_money {
     .forward_arrow p {
         color: #767676;
         width: 18px;
+        font-size: 18px;
+        line-height: 20px;
+        padding-top: 1%;
     }
     .get_to_know button {
         font-size: 9px;
