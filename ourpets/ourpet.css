@@ -493,6 +493,32 @@ a:hover:after {
 }
 
 @media only screen and (min-width: 280px) and (max-width: 600px) {
+    /* pets */
+    /*= chnanging image =*/
+    #ourpet1 {
+        content: url('image/1_low.png');
+    }
+    #ourpet2 {
+        content: url('image/2_low.png');
+    }
+    #ourpet3 {
+        content: url('image/3_low.png');
+    }
+    #ourpet4 {
+        content: url('image/4_low.png');
+    }
+    #ourpet5 {
+        content: url('image/5_low.png');
+    }
+    #ourpet6 {
+        content: url('image/6_low.png');
+    }
+    #ourpet7 {
+        content: url('image/7_low.png');
+    }
+    #ourpet8 {
+        content: url('image/8_low.png');
+    }
     .our_pet_title h4 {
         margin-top: 5%;
     }

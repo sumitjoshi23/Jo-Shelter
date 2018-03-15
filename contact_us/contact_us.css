@@ -399,6 +399,10 @@ a:hover:after {
         top: 6%;
     }
 
+    /*= changing image =*/
+    .contact_up {
+        background-image: linear-gradient(to right bottom, rgba(125, 121, 121, 0.35), rgba(13, 8, 8, 0.75)), url(images/background_low.jpg);
+    }
     /* fotter */
     .fotter_content {
         width: 150px;
