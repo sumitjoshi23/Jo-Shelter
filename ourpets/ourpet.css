@@ -56,11 +56,11 @@
     text-decoration: none;
 }
 
-.logo:hover>h3 {
+.logo:hover > h3 {
     color: #ef7272;
 }
 
-.logo:hover>p {
+.logo:hover > p {
     color: #68b0f1;
 }
 
@@ -119,7 +119,6 @@ a:hover:after {
 
 /*- - - - Content - - - -*/
 
-
 /*#f6f6f6s*/
 
 #our_pet_content {
@@ -160,7 +159,7 @@ a:hover:after {
 }
 
 .pets:hover {
-    box-shadow: 0px 4px 18px 2px #9f9e9e;
+    box-shadow: 0px 3px 13px 1px rgba(134, 134, 134, 0.69);
 }
 
 .effect {
@@ -173,9 +172,9 @@ a:hover:after {
 .pets:hover span {
     background: #a7a7a7;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, rgba(164, 164, 164, 0.35), rgba(137, 137, 137, 0));
+    background: -webkit-linear-gradient(to bottom, rgba(121, 121, 121, 0.17), rgba(137, 137, 137, 0));
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, rgba(164, 164, 164, 0.35), rgba(137, 137, 137, 0));
+    background: linear-gradient(to bottom, rgba(121, 121, 121, 0.17), rgba(137, 137, 137, 0));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -350,11 +349,9 @@ a:hover:after {
 
 /* pop up fix */
 
-
 /*.show_popup {
     transform: translate(-50%, -50%) scale(0.78) !important;
 }*/
-
 
 /* responsive */
 
