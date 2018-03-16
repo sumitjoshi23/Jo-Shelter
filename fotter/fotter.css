@@ -81,6 +81,52 @@
     z-index: 3;
 }
 
+/* follow */
+
+#fotter {
+    /*position: re*/
+}
+
+#follow {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#fotter a:hover img {
+    background-color: rgb(247, 132, 117);
+}
+
+#follow img {
+    padding: 1px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.82);
+    transition: all 0.3s;
+}
+
+#fotter a:not(:first-child) {
+    margin-left: 15px;
+}
+
+#follow p {
+    color: #ededed;
+    font-size: 16px;
+}
+
+/* copyright line */
+
+#copyright {
+    text-align: center;
+    color: #d2d2d2;
+    background-color: #242424;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
 
 
 
@@ -129,6 +175,10 @@
         width: 130px;
         right: 8%;
     }
+    #copyright {
+        padding: 8.5px 0px;
+        font-size: 12px;
+    }
 }
 
 @media only screen and (min-width:280px) and (max-width:800px) {
@@ -174,6 +224,23 @@
         width: 105px;
         right: 5%;
     }
+    #copyright {
+        padding: 7.5px 0px;
+        font-size: 10px;
+    }
+    /* follow */
+    #follow {
+        padding-bottom: 4px;
+    }
+    #follow img {
+        width: 20px;
+    }
+    fotter a:not(:first-child) {
+        margin-left: 10px;
+    }
+    #follow p {
+        font-size: 14px;
+    }
 
 }
 
@@ -192,6 +259,24 @@
     #fotter_dog {
         content: url('images/fotter_dog_low.png');
     }
+    #copyright {
+        padding: 8px 0px;
+        font-size: 8px;
+    }
+    /* follow */
+    #follow {
+        padding-bottom: 2px;
+    }
+    #follow img {
+        width: 18px;
+    }
+    fotter a:not(:first-child) {
+        margin-left: 7px !important;
+    }
+    #follow p {
+        font-size: 12px;
+    }
+
 }
 
 @media only screen and (min-width:280px) and (max-width:480px) {
@@ -209,9 +294,9 @@
         width: 12px;
     }
     .fotter_content p {
-            font-size: 6px;
-    margin-top: 1%;
-    line-height: 14px;
+        font-size: 6px;
+        margin-top: 1%;
+        line-height: 14px;
     }
 
     .fotter_adress h6 {
@@ -228,5 +313,22 @@
     }
     .fotter_adress img {
         width: 13px;
+    }
+    #copyright {
+        padding: 6.5px 0px;
+        font-size: 7px;
+    }
+    /* follow */
+    #follow {
+        padding-bottom: 1px;
+    }
+    #follow img {
+        width: 12px;
+    }
+    #fotter a:not(:first-child) {
+        margin-left: 5px !important;
+    }
+    #follow p {
+        font-size: 9px;
     }
 }
