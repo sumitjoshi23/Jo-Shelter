@@ -94,6 +94,7 @@
     transform: translateX(-50%);
     text-align: center;
     padding-bottom: 5px;
+    font-family: "montserrat", sans-serif;
 }
 
 #fotter a:hover img {
@@ -108,7 +109,7 @@
     transition: all 0.3s;
 }
 
-#fotter a:not(:first-child) {
+#follow a:not(:first-child) {
     margin-left: 15px;
 }
 
@@ -125,6 +126,7 @@
     background-color: #242424;
     padding: 10px 0px;
     font-size: 14px;
+    font-family: "montserrat", sans-serif;
 }
 
 
