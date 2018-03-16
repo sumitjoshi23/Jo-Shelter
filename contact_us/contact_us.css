@@ -3,110 +3,6 @@
     margin: 0;
 }
 
-
-/*-- NAV --*/
-
-.navbar {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    padding-top: 3%;
-    transition: all 0.3s 0.1s;
-    z-index: 1000;
-}
-
-.logo {
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    float: left;
-    margin-left: 10.3%;
-    text-decoration: none;
-    transition: all 0.3s 0.1s;
-}
-
-.logo h3 {
-    text-transform: capitalize;
-    text-decoration: none;
-    color: #ffdcc0;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    word-spacing: 4px;
-    font-weight: 300;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-}
-
-.logo p {
-    color: rgba(244, 244, 244, 0.63);
-    font-size: 11px;
-    text-align: center;
-    margin-top: -3%;
-    transition: all 0.3s ease-out;
-    text-decoration: none;
-}
-
-.logo:hover > h3 {
-    color: #ef7272;
-}
-
-.logo:hover > p {
-    color: #68b0f1;
-}
-
-nav {
-    float: right;
-    margin-top: 0.7%;
-    margin-right: 11.5%;
-    transition: all 0.3s 0.1s;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    margin-left: 3rem;
-    display: inline-block;
-    text-transform: capitalize;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    text-underline-position: under;
-    transition: all 0.2s;
-}
-
-nav a:first-child {
-    margin-left: 0%;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: #f45151;
-    color: rgb(245, 172, 172);
-}
-
-.active_nav {
-    text-decoration: none !important;
-}
-
-.active_nav:after {
-    content: '';
-    height: 2.6px;
-    background: #fee4c9;
-    display: block;
-    margin-top: 2%;
-    width: 95%;
-    margin: auto;
-    transition: all 0.2s;
-}
-
-.active_nav:hover {
-    text-decoration: none !important;
-}
-
-a:hover:after {
-    background: #f45151;
-}
-
 .contact_up {
     background-image: linear-gradient(to right bottom, rgba(125, 121, 121, 0.35), rgba(13, 8, 8, 0.75)), url(images/background.jpg);
     background-position: top;
@@ -247,19 +143,6 @@ a:hover:after {
 /* max width formobile is 600px & max width for tablet is 1024px*/
 
 @media only screen and (min-width:280px) and (max-width:1024px) {
-    /* logo */
-    .logo {
-        margin-left: 5.3%;
-    }
-    .logo h3 {
-        font-size: 1.5rem;
-    }
-    .logo p {
-        font-size: 11px;
-    }
-    nav {
-        margin-right: 5.5%;
-    }
     /* Banner Content */
     .contact_up_txt {
         padding-top: 36%;
@@ -314,7 +197,6 @@ a:hover:after {
 
 
 @media only screen and (min-width: 280px) and (max-width: 615px) {
-    /* logo */
     .contact_container_message img {
         left: 18px;
         width: 6%;

@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/brown_in_white.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto|Ubuntu" rel="stylesheet">
+    
     <link rel="stylesheet" href="ourpet.css">
+    <link rel="stylesheet" href="../nav/nav.css">
     <link rel="stylesheet" href="../fotter/fotter.css">
 
     <!--linking popup to ourpet-->
@@ -17,22 +19,27 @@
 <body>
 
     <header>
-        <div class="header_container">
-            <div class="navbar">
-                <a href="../index.html">
-                    <div class="logo">
-                        <h3>Divine House</h3>
-                        <p>Shelter for pets in India</p>
-                    </div>
-                </a>
+        <div class="navbar">
+            <div class="logo">
+                <h3>Divine House</h3>
+                <p>Shelter for pets in India</p>
+            </div>
 
-                <nav>
+            <nav>
+                <div class="nav_container">
                     <a href="../index.html">Home</a>
-                    <a href="#" class="active_nav">our pets</a>
+                    <a href="ourpet.html" class="active_nav">our pets</a>
                     <a href="#">to help us</a>
                     <a href="../contact_us/contact_us.html">contact us</a>
-                </nav>
+                </div>
+            </nav>
+
+            <div class="menu noSelect">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+
         </div>
     </header>
 
@@ -170,6 +177,7 @@
     </fotter>
 
     <script src="ourpet.js"></script>
+    <script src="../nav/nav.js"></script>
     <script src='../popup/popup.js'></script>
 </body>
 

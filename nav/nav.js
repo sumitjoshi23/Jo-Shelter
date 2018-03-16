@@ -32,4 +32,3 @@ document.querySelector(".menu").addEventListener("click", function () {
 
 window.addEventListener("scroll", scollAnimation);
 
-/*document.querySelector(".item p").textContent = window.innerWidth;*/

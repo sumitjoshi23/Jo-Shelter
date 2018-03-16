@@ -24,109 +24,6 @@
 }
 
 
-/*-- NAV --*/
-
-.navbar {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    padding-top: 3%;
-    transition: all 0.3s;
-    z-index: 1000;
-    transition: all 0.3s;
-}
-
-.logo {
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    float: left;
-    margin-left: 10.3%;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.logo h3 {
-    text-transform: capitalize;
-    text-decoration: none;
-    color: #f4987d;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    word-spacing: 4px;
-    font-weight: 300;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-}
-
-.logo p {
-    color: rgba(244, 244, 244, 0.63);
-    font-size: 11px;
-    text-align: center;
-    margin-top: -3%;
-    transition: all 0.3s ease-out;
-    text-decoration: none;
-}
-
-.logo:hover > h3 {
-    color: #ef7272;
-}
-
-.logo:hover > p {
-    color: #68b0f1;
-}
-
-nav {
-    float: right;
-    margin-top: 0.7%;
-    margin-right: 11.5%;
-    transition: all 0.3s;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    margin-left: 3rem;
-    display: inline-block;
-    text-transform: capitalize;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    text-underline-position: under;
-    transition: all 0.2s;
-}
-
-nav a:first-child {
-    margin-left: 0%;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: #f45151;
-    color: rgb(245, 172, 172);
-}
-
-.active_nav {
-    text-decoration: none !important;
-}
-
-.active_nav:after {
-    content: '';
-    height: 2.6px;
-    background: #fee4c9;
-    display: block;
-    margin-top: 2%;
-    width: 95%;
-    margin: auto;
-    transition: all 0.2s;
-}
-
-.active_nav:hover {
-    text-decoration: none !important;
-}
-
-a:hover:after {
-    background: #f45151;
-}
 
 
 /*- - - - About Us - - - -*/
@@ -396,28 +293,6 @@ a:hover:after {
 }
 
 
-/* BcBilli */
-
-.billi {
-    position: absolute;
-    top: 50%;
-    left: -200px;
-    transform: translate(0px, -50%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s 0.06s;
-}
-
-#bcBilli {
-    width: 270px;
-}
-
-.rotateBcBilli {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(52%, -50%) rotate(55deg);
-}
-
 /*- - - - Donate - - - -*/
 
 .donate_container {
@@ -560,19 +435,6 @@ section#donate_money {
 /*  responsive  */
 
 @media only screen and (min-width:280px) and (max-width:1024px) {
-    /* logo */
-    .logo {
-        margin-left: 5.3%;
-    }
-    .logo h3 {
-        font-size: 1.5rem;
-    }
-    .logo p {
-        font-size: 11px;
-    }
-    nav {
-        margin-right: 5.5%;
-    }
     .banner_content p {
         padding-right: 54%;
     }
@@ -911,19 +773,6 @@ section#donate_money {
 }
 
 @media only screen and (min-width:280px) and (max-width:480px) {
-    /* nav */
-    .logo h3 {
-        font-size: 20px;
-    }
-    .logo p {
-        font-size: 9px;
-    }
-    .menu {
-        margin: 4px 20px 2px 0px !important;
-    }
-    .activeNavbar {
-        box-shadow: 0px 2px 20px -1px rgba(28, 28, 28, 0.82);
-    }
     /* banner */
     .banner_content_container {
         padding: 35% 0px 16% 0%;
@@ -938,7 +787,7 @@ section#donate_money {
         padding: 0 17%;
     }
     .banner_content button {
-        padding: 4% 5%;
+        padding: 2.5% 5%;
     }
     /* pets */
     .pet_row {
