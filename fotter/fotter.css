@@ -64,7 +64,6 @@
 .fotter_adress {
     display: inline-block;
     position: absolute;
-    margin-left: 2%;
     z-index: 100;
 }
 
@@ -198,25 +197,25 @@
 @media only screen and (min-width:280px) and (max-width:480px) {
     /* fotter */
     .fotter_container {
-        width: 312px;
+        width: 280px;
     }
     .fotter_contact {
-        width: 170px;
+        width: 160px;
     }
     .fotter_contact h6 {
-        font-size: 9px;
+        font-size: 8px;
     }
     .fotter_contact img {
-        width: 14px;
+        width: 12px;
     }
     .fotter_content p {
-        font-size: 7px;
-        margin-top: 1%;
-        line-height: 16px;
+            font-size: 6px;
+    margin-top: 1%;
+    line-height: 14px;
     }
 
     .fotter_adress h6 {
-        font-size: 9px;
+        font-size: 8px;
         margin-top: 5%;
         margin-bottom: 5%;
     }
@@ -228,6 +227,6 @@
         width: 66px;
     }
     .fotter_adress img {
-        width: 15px;
+        width: 13px;
     }
 }

@@ -14,7 +14,7 @@
 }
 
 .logo {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     cursor: pointer;
     float: left;
     margin-left: 10.3%;
@@ -23,6 +23,7 @@
 }
 
 .logo h3 {
+    font-family: 'Roboto', sans-serif !important;
     text-transform: capitalize;
     text-decoration: none;
     color: #f4987d;
@@ -35,6 +36,7 @@
 }
 
 .logo p {
+    font-family: 'Roboto', sans-serif !important;
     color: rgba(244, 244, 244, 0.63);
     font-size: 11px;
     text-align: center;
@@ -110,8 +112,8 @@ a:hover:after {
 /* anim starter */
 
 .activeNavbar {
-    padding-top: 0.8% !important;
-    padding-bottom: 0.8% !important;
+    padding-top: 0.65% !important;
+    padding-bottom: 0.65% !important;
     background: #2d2322;
     /* Old browsers */
     background: -moz-linear-gradient(left, #44352d 0%, #2d2322 50%, #1a1a1c 100%);

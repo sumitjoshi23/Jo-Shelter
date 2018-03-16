@@ -689,13 +689,13 @@ section#donate_money {
         display: none;
     }
     #ourpet1 {
-        content: url('ourpets/image/1_low.png');
+        content: url('../ourpets/image/1_low.png');
     }
     #ourpet2 {
-        content: url('ourpets/image/2_low.png');
+        content: url('../ourpets/image/2_low.png');
     }
     #ourpet3 {
-        content: url('ourpets/image/3_low.png');
+        content: url('../ourpets/image/3_low.png');
     }
     .pets {
         width: 134px;
