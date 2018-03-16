@@ -1,0 +1,230 @@
+/*- - - - Fotter - - - -*/
+
+#fotter {
+    display: block;
+    background: url('images/background-color.jpg') no-repeat left;
+    background-size: cover;
+    position: relative;
+    font-family: "montserrat", sans-serif;
+}
+
+.fotter_container {
+    width: 782px;
+    margin: auto;
+    padding: 5% 0px;
+}
+
+.fotter_contact {
+    width: 435px;
+    display: inline-block;
+}
+
+.fotter_contact h6,
+.fotter_adress h6 {
+    color: #eaeaea;
+    font-size: 23px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.fotter_content {
+    line-height: 30px;
+}
+
+#mail {
+    content: url("svgicons/mail.svg");
+}
+
+#phone {
+    content: url("svgicons/telephone.svg");
+}
+
+#location {
+    content: url("svgicons/location.svg");
+}
+
+#fotter_dog {
+    content: url("images/fotter_dog.png");
+}
+
+.fotter_contact img {
+    width: 20px;
+    display: inline-block;
+    float: left;
+    margin-right: 2.5%;
+}
+
+.fotter_content p,
+.fotter_adress p {
+    color: #f7dab6;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.fotter_adress {
+    display: inline-block;
+    position: absolute;
+    margin-left: 2%;
+    z-index: 100;
+}
+
+
+.fotter_adress img {
+    width: 23px;
+    float: left;
+}
+
+#fotter #fotter_dog {
+    width: 150px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 3;
+}
+
+
+
+
+/*  responsive  */
+
+@media only screen and (min-width:280px) and (max-width:1024px) {
+    /* fotter */
+    .fotter_container {
+        width: 690px;
+        padding: 3.5% 0px;
+    }
+    .fotter_contact {
+        width: 344px;
+    }
+    .fotter_contact h6 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 2%;
+    }
+
+    .fotter_contact img {
+        width: 24px;
+    }
+    .fotter_content p {
+        font-size: 14px;
+        margin-top: 1%
+    }
+    .fotter_content {
+        line-height: 26px;
+    }
+    .fotter_adress {
+        margin-left: 2%;
+    }
+    .fotter_adress h6 {
+        font-size: 23px;
+        margin-bottom: 2%;
+    }
+    .fotter_adress img {
+        width: 23px;
+    }
+    .fotter_adress p {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    #fotter #fotter_dog {
+        width: 130px;
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width:800px) {
+
+    /* fotter */
+    .fotter_container {
+        width: 404px;
+        padding: 3.5% 0px;
+        margin: auto;
+    }
+    .fotter_contact {
+        width: 218px;
+    }
+    .fotter_contact h6 {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 2%;
+    }
+    .fotter_content {
+        line-height: 26px;
+    }
+    .fotter_contact img {
+        width: 18px;
+    }
+    .fotter_content p {
+        font-size: 10px;
+        margin-top: 1%;
+        line-height: 22px;
+    }
+    .fotter_adress h6 {
+        font-size: 12px;
+        margin-top: 1%;
+        margin-bottom: 7%;
+    }
+    .fotter_adress img {
+        width: 23px;
+    }
+    .fotter_adress p {
+        line-height: 11px;
+        font-size: 9px;
+    }
+    #fotter #fotter_dog {
+        width: 105px;
+    }
+
+}
+
+@media only screen and (min-width:280px) and (max-width:600px) {
+    /* fotter */
+    #fotter {
+        background-image: url('images/background-color_low.jpg');
+    }
+    #fotter #fotter_dog {
+        width: 88px;
+    }
+    .fotter_container {
+        width: 400px;
+    }
+    #fotter_dog {
+        content: url('images/fotter_dog_low.png');
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width:480px) {
+    /* fotter */
+    .fotter_container {
+        width: 312px;
+    }
+    .fotter_contact {
+        width: 170px;
+    }
+    .fotter_contact h6 {
+        font-size: 9px;
+    }
+    .fotter_contact img {
+        width: 14px;
+    }
+    .fotter_content p {
+        font-size: 7px;
+        margin-top: 1%;
+        line-height: 16px;
+    }
+
+    .fotter_adress h6 {
+        font-size: 9px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .fotter_adress p {
+        line-height: 8px;
+        font-size: 6px;
+    }
+    #fotter #fotter_dog {
+        width: 66px;
+    }
+    .fotter_adress img {
+        width: 15px;
+    }
+}

@@ -242,86 +242,9 @@ a:hover:after {
     box-shadow: 2px 2px 14px 2px #b1b1b1bd;
 }
 
-
-/*- - - - Fotter - - - -*/
-
-#fotter {
-    background: url('../images/fotter_backround.jpg') no-repeat center;
-    background-size: cover;
-    display: block;
-}
-
-.fotter_container {
-    padding-bottom: 2%;
-}
-
-.fotter_contact {
-    font-family: 'ubuntu', sans-serif;
-    width: 25%;
-    display: inline-block;
-    margin-left: 10%;
-    margin-bottom: 2%;
-    margin-top: 4.5%;
-}
-
-.fotter_contact h6,
-.fotter_adress h6 {
-    font-family: 'ubuntu', sans-serif;
-    font-size: 1.8rem;
-    color: #e0e0e0;
-    font-weight: 400;
-    margin-bottom: 2%;
-}
-
-.fotter_content {
-    display: inline-block;
-}
-
-.fotter_content img,
-.fotter_adress img {
-    float: left;
-    margin-right: 2%;
-    width: 7%;
-}
-
-.fotter_adress img {
-    margin-top: 1.5%;
-    margin-right: 1%;
-    width: 4%;
-}
-
-.fotter_content p,
-.fotter_adress p {
-    float: left;
-    margin-top: 1%;
-    color: #edd7c7;
-    font-size: 0.9rem;
-}
-
-.adress {
-    width: 200%;
-    margin-left: -1.5%;
-}
-
-.adress p {
-    line-height: 1.3rem;
-}
-
-.fotter_adress {
-    font-family: 'ubuntu', sans-serif;
-    width: 32%;
-    display: inline-block;
-    position: absolute;
-    margin-left: 6%;
-    margin-top: 4.5%;
-}
-
-
 /*  responsive  */
 
 /* max width formobile is 600px & max width for tablet is 1024px*/
-
-/*@media only screen and (min-width:280px) and (max-width:600px) {*/
 
 @media only screen and (min-width:280px) and (max-width:1024px) {
     /* logo */
@@ -402,35 +325,5 @@ a:hover:after {
     /*= changing image =*/
     .contact_up {
         background-image: linear-gradient(to right bottom, rgba(125, 121, 121, 0.35), rgba(13, 8, 8, 0.75)), url(images/background_low.jpg);
-    }
-    /* fotter */
-    .fotter_content {
-        width: 150px;
-    }
-    .fotter_contact h6,
-    .fotter_adress h6 {
-        font-size: 0.8rem;
-        width: 110%;
-    }
-    .fotter_contact {
-        width: 48%;
-        margin-left: 2%;
-    }
-    .fotter_content p,
-    .fotter_adress p {
-        font-size: 0.6rem;
-        margin-top: -0.23%;
-    }
-    .adress {
-        margin-top: 8%;
-    }
-    .adress p {
-        line-height: 0.65rem;
-    }
-    .fotter_contact {
-        width: 31%;
-    }
-    .fotter_adress {
-        margin-left: 8%;
     }
 }

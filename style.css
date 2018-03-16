@@ -396,6 +396,28 @@ a:hover:after {
 }
 
 
+/* BcBilli */
+
+.billi {
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    transform: translate(0px, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s 0.06s;
+}
+
+#bcBilli {
+    width: 270px;
+}
+
+.rotateBcBilli {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(52%, -50%) rotate(55deg);
+}
+
 /*- - - - Donate - - - -*/
 
 .donate_container {
@@ -534,83 +556,6 @@ section#donate_money {
 }
 
 
-/*- - - - Fotter - - - -*/
-
-#fotter {
-    display: block;
-    background: url('images/background-color.jpg') no-repeat left;
-    background-size: cover;
-    position: relative;
-}
-
-.fotter_container {
-    width: 975px;
-    margin: auto;
-    padding: 5% 0px;
-}
-
-.fotter_contact {
-    width: 435px;
-    display: inline-block;
-}
-
-.fotter_contact h6 {
-    color: #eaeaea;
-    font-size: 28px;
-    display: inline-block;
-}
-
-.fotter_content {
-    line-height: 30px;
-}
-
-.fotter_contact img {
-    width: 28px;
-    display: inline-block;
-    float: left;
-    margin-right: 2.5%;
-}
-
-.fotter_content p {
-    color: #f7dab6;
-}
-
-.fotter_adress {
-    display: inline-block;
-    position: absolute;
-    margin-left: 2%;
-    z-index: 100;
-}
-
-.fotter_adress h6 {
-    color: #eaeaea;
-    font-size: 30px;
-}
-
-
-.fotter_adress img {
-    width: 30px;
-    float: left;
-}
-
-.fotter_adress p {
-    line-height: 32px;
-    color: #f7dab6;
-}
-
-
-
-#fotter #fotter_dog {
-    width: 182px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    z-index: 3;
-}
-
-
-
-
 
 /*  responsive  */
 
@@ -706,48 +651,6 @@ section#donate_money {
     }
     .donate_money_content p {
         font-size: 12.5px;
-    }
-
-    /* fotter */
-    .fotter_container {
-        width: 690px;
-        padding: 3.5% 0px;
-    }
-    .fotter_contact {
-        width: 344px;
-    }
-    .fotter_contact h6 {
-        font-size: 20px;
-        letter-spacing: 1px;
-        margin-bottom: 2%;
-    }
-
-    .fotter_contact img {
-        width: 24px;
-    }
-    .fotter_content p {
-        font-size: 14px;
-        margin-top: 1%
-    }
-    .fotter_content {
-        line-height: 26px;
-    }
-    .fotter_adress {
-        margin-left: 2%;
-    }
-    .fotter_adress h6 {
-        font-size: 23px;
-        margin-bottom: 2%;
-    }
-    .fotter_adress img {
-        width: 23px;
-    }
-    .fotter_adress p {
-        line-height: 20px;
-        font-size: 14px;
-    }
-    #fotter #fotter_dog {
-        width: 130px;
     }
 }
 
@@ -882,48 +785,6 @@ section#donate_money {
         font-size: 12.5px;
         line-height: 24px;
     }
-
-    /* fotter */
-    .fotter_container {
-        width: 404px;
-        padding: 3.5% 0px;
-        margin: auto;
-    }
-    .fotter_contact {
-        width: 218px;
-    }
-    .fotter_contact h6 {
-        font-size: 12px;
-        letter-spacing: 1px;
-        margin-bottom: 2%;
-    }
-    .fotter_content {
-        line-height: 26px;
-    }
-    .fotter_contact img {
-        width: 18px;
-    }
-    .fotter_content p {
-        font-size: 10px;
-        margin-top: 1%;
-        line-height: 22px;
-    }
-    .fotter_adress h6 {
-        font-size: 12px;
-        margin-top: 1%;
-        margin-bottom: 7%;
-    }
-    .fotter_adress img {
-        width: 23px;
-    }
-    .fotter_adress p {
-        line-height: 11px;
-        font-size: 9px;
-    }
-    #fotter #fotter_dog {
-        width: 105px;
-    }
-
 }
 
 @media only screen and (min-width:280px) and (max-width:600px) {
@@ -940,13 +801,14 @@ section#donate_money {
     }
     .about_us_container img {
         width: 155px;
-        content:url("images/aboutus_low.png");
+        content: url("images/aboutus_low.png");
     }
     .about_us_content {
         width: 246px;
     }
     .about_us_content h4 {
         font-size: 20px;
+        margin-top: 4%;
     }
     .about_us_content p {
         font-size: 10px;
@@ -1041,25 +903,10 @@ section#donate_money {
     .donate_bottom .item:nth-child(2) {
         margin-left: 0px;
     }
-    
-    /* donate-bank */
-    
-    .donate_money_container img {
-        content: url('images/donate_low.png');
-    }
 
-    /* fotter */
-    #fotter {
-        background-image: url('images/background-color_low.jpg');
-    }
-    #fotter #fotter_dog {
-        width: 88px;
-    }
-    .fotter_container {
-        width: 400px;
-    }
-    #fotter_dog {
-        content: url('images/fotter_dog_low.png');
+    /* donate-bank */
+    #donateImg {
+        content: url('images/donate_low.png');
     }
 }
 
@@ -1091,7 +938,7 @@ section#donate_money {
         padding: 0 17%;
     }
     .banner_content button {
-        padding: 1.2% 5%;
+        padding: 4% 5%;
     }
     /* pets */
     .pet_row {
@@ -1197,40 +1044,5 @@ section#donate_money {
     }
     .donate_money_content p {
         font-size: 11px;
-    }
-
-    /* fotter */
-    .fotter_container {
-        width: 312px;
-    }
-    .fotter_contact {
-        width: 170px;
-    }
-    .fotter_contact h6 {
-        font-size: 9px;
-    }
-    .fotter_contact img {
-        width: 14px;
-    }
-    .fotter_content p {
-        font-size: 7px;
-        margin-top: 1%;
-        line-height: 16px;
-    }
-
-    .fotter_adress h6 {
-        font-size: 9px;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-    .fotter_adress p {
-        line-height: 8px;
-        font-size: 6px;
-    }
-    #fotter #fotter_dog {
-        width: 66px;
-    }
-    .fotter_adress img {
-        width: 15px;
     }
 }
