@@ -11,34 +11,78 @@
     background: -webkit-linear-gradient(left, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
     background: linear-gradient(to right, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44352d', endColorstr='#1a1a1c', GradientType=1);
-    padding: 1.5% 0px !important;
+    padding: 1.5% 0px;
 }
 
 
 /* developer section */
 
 #developers {
-    padding-top: 6%;
+    padding: 6% 0px;
+    background-color: #f5f5f5;
 }
 
 .developer_wrapper {
-    width: 1024px;
+    width: 900px;
     margin: auto;
     margin-top: 6%;
 }
 
 #profile_image {
     float: left;
-    width: 370px;
+    width: 36.15%;
     -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
 }
 
 .developer_detail {
-        width: 74.85%;
-    height: 370px;
+    width: 74.85%;
+    height: 325.344px;
     background-color: #cfd9dc;
     -webkit-clip-path: polygon(14.5% 0, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(14.5% 0, 100% 0%, 100% 100%, 0% 100%);
-    margin-left: 258px;
+    margin-left: 25.2%;
+}
+
+.devepoper_detail_wrapper {
+    margin-left: 22%;
+}
+
+.devepoper_detail_wrapper h4 {
+    margin-bottom: 4%;
+    font-size: 28px;
+    font-family: 'lato', sans-serif;
+    text-align: center;
+    letter-spacing: 0.3px;
+    /* color: #3971f4; */
+    /* first */
+    color: #7e3ff5;
+    background: -webkit-linear-gradient(top, #3971f4 30%, #7e3ff5 60%);
+    background: linear-gradient(top, #3971f4 30%, #7e3ff5 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.devepoper_detail_wrapper h6 {
+    letter-spacing: 0.3px;
+    font-size: 20px;
+    font-family: 'montserrat', sans-serif;
+    font-family: 'open+sans', sans-serif;
+    font-weight: 600;
+    color: #484848;
+}
+
+.devepoper_detail_wrapper h5 {
+        color: #4a8bf1;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: left;
+    margin-top: 6%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'montserrat', sans-serif;
+}
+
+.lang img {
+    width: 70px;
 }
