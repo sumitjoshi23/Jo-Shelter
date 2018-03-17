@@ -78,8 +78,6 @@ nav a:first-child {
 }
 
 nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: #f45151;
     color: rgb(245, 172, 172);
 }
 
