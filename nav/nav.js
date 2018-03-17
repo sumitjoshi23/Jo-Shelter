@@ -18,7 +18,6 @@ var stopScroll = function () {
     if (count) {
         window.scroll(xs, ys);
     }
-    console.log(xs,ys);
 }
 
 document.querySelector(".menu").addEventListener("click", function () {

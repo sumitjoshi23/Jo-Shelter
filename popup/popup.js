@@ -1,13 +1,5 @@
 var dataController = (function () {
-    /*var backup = {
-        name: [],
-        breed: [],
-        information: [],
-        age: [],
-        lifeSpan: [],
-        height: [],
-        gender: []
-    }*/
+
     var backup = [
         {
             name: "katrine",
@@ -133,7 +125,6 @@ var UIController = (function () {
         document.querySelectorAll(DOMStrings.petULClass)[1].textContent = data.lifeSpan;
         document.querySelectorAll(DOMStrings.petULClass)[2].textContent = data.height;
         document.querySelectorAll(DOMStrings.petULClass)[3].textContent = data.gender;
-        console.log("height", data.gender);
     }
 
     /*UIController Return*/

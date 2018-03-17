@@ -1,0 +1,44 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* navbar */
+
+.navbar {
+    background: #2d2322;
+    background: -moz-linear-gradient(left, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
+    background: -webkit-linear-gradient(left, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
+    background: linear-gradient(to right, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44352d', endColorstr='#1a1a1c', GradientType=1);
+    padding: 1.5% 0px !important;
+}
+
+
+/* developer section */
+
+#developers {
+    padding-top: 6%;
+}
+
+.developer_wrapper {
+    width: 1024px;
+    margin: auto;
+    margin-top: 6%;
+}
+
+#profile_image {
+    float: left;
+    width: 370px;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+}
+
+.developer_detail {
+        width: 74.85%;
+    height: 370px;
+    background-color: #cfd9dc;
+    -webkit-clip-path: polygon(14.5% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(14.5% 0, 100% 0%, 100% 100%, 0% 100%);
+    margin-left: 258px;
+}

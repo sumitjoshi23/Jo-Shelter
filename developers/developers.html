@@ -1,24 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divine Shelter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../home/images/brown_in_white.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Roboto|Ubuntu|Open+Sans|Slabo+27px" rel="stylesheet">
-    <link rel="stylesheet" href="contact_us.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="../nav/nav.css">
+    <link rel="stylesheet" href="developer.css">
     <link rel="stylesheet" href="../fotter/fotter.css">
-
 
 </head>
 
 <body>
 
-
-    <!-- header -->
-
+   <!-- header -->
+   
     <header>
         <div class="navbar">
             <a href="#">
@@ -31,9 +29,9 @@
             <nav>
                 <div class="nav_container">
                     <a href="../index.html">Home</a>
-                    <a href="../ourpets/ourpet.html">our pets</a>
-                    <a href="../developers/developers.html">Developers</a>
-                    <a href="#" class="active_nav">contact us</a>
+                    <a href="ourpet.html" class="active_nav">our pets</a>
+                    <a href="#">Developers</a>
+                    <a href="../contact_us/contact_us.html">contact us</a>
                 </div>
             </nav>
 
@@ -46,46 +44,26 @@
         </div>
     </header>
 
-    <!--contact Us-->
-    <section id="contact">
-        <div class="contact_up">
-            <div class="contact_up_txt">
-                <h2>Let's give <span>them</span> , Their <span>home</span> </h2>
-                <p>Drop us a line, or give us a heads up if you’re interested in visiting us.</p>
+   <!-- Developers -->
+   
+    <section id="developers">
+        <div class="developers_container">
+            <div class="developer">
+                <div class="developer_wrapper">
+                    <img id="profile_image" src="images/main.jpg" alt="second profile">
+                    <div class="developer_detail">
+                        <h4>Bhupender Singh</h4>
+                        <h5>Web Developer</h5>
+                        <h6>Delhi, India</h6>
+                        <h6>Student</h6>
+
+                    </div>
+                </div>
             </div>
         </div>
-
-
-        <div class="contact_container">
-            <h2>Get in touch with us</h2>
-            <p>Let’s us know about your thoughts</p>
-            <form>
-                <div class="contact_container_info">
-                    <div class="contact_container_name info">
-                        <img src="images/contact.png" alt="name icon">
-                        <input type="text" name="name" required="" placeholder="Your Name">
-                    </div>
-                    <div class="contact_container_phone info">
-                        <img src="images/phone.png" alt="phone icon">
-                        <input type="text" required="" placeholder="Your Phone no.">
-                    </div>
-                    <div class="contact_container_email info">
-                        <img src="images/Email-Icon.png" alt="email icon">
-                        <input type="email" required="" placeholder="Your email">
-                    </div>
-                </div>
-                <div class="contact_container_message">
-                    <img src="images/Speech-256.png" alt="message icon">
-                    <textarea name="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-
-
-
     </section>
 
+    <!-- fotter -->
     <fotter id="fotter">
         <div class="fotter_container">
             <div class="fotter_contact">
@@ -114,10 +92,10 @@
             <a href="https://chat.whatsapp.com/GJakEW2jadA7jqrAnPvILX" target="_blank"><img src="../fotter/images/whatsapp.png" alt="whatsapp image"></a>
             <p>Join us Now</p>
         </div>
-        <img id="fotter_dog" src="#" alt="fotter Dog img">
+        <img id="fotter_dog" src="../fotter/images/fotter_dog.png" alt="fotter Dog img">
     </fotter>
     <p id="copyright">&copy; Copyright 2018 by J & B. &reg; All Rights Reserved. Developed by J & B</p>
-  
+
 
     <script src="../nav/nav.js"></script>
 </body>
