@@ -46,12 +46,16 @@
 #developers {
     padding: 5% 0px;
     background-color: rgba(244, 244, 244, 0.33);
+    background: #70e1f5;
+    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
+    background: linear-gradient(to right, #ffd194, #70e1f5);
 }
 
 .developer_wrapper {
     box-shadow: 0px 0px 1px 0px rgba(144, 144, 144, 0.83);
     border: 1px solid rgba(88, 88, 88, 0.3607843137254902);
     width: 850px;
+    height: 309px;
     margin: auto;
     margin-top: 6%;
     transition: all 0.3s;
@@ -66,14 +70,6 @@
     position: relative;
     z-index: 1 !important;
     transition: all 0.3s;
-}
-
-.profile_img:hover > #profile_image {
-
-    -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
-    filter: blur(2px) brightness(70%);
-    transform: scale(1.1);
 }
 
 /* hover effected span */
@@ -110,7 +106,23 @@
     z-index: 20;
 }
 
-.profile_img:hover > .dev_follow {
+.developer_detail:hover #profile_image {
+
+    -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    filter: blur(2px) brightness(70%);
+    transform: scale(1.1);
+}
+
+.second_dev .developer_detail:hover #profile_image {
+
+    -webkit-clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+    filter: blur(2px) brightness(70%);
+    transform: scale(1.1);
+}
+
+.developer_detail:hover .dev_follow {
     top: 21%;
     transition: all 0.3s 0s !important;
     visibility: visible;
@@ -143,14 +155,6 @@
     float: right;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
-}
-
-.second_dev .profile_img:hover > #profile_image {
-
-    -webkit-clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
-    filter: blur(2px) brightness(70%);
-    transform: scale(1.1);
 }
 
 .second_dev #profile_image ~ span {
@@ -195,7 +199,7 @@
 
 .developer_detail {
     width: 100%;
-    height: 309px;
+    height: 100%;
     position: relative;
     background: #50C9C3;
     background: -webkit-linear-gradient(to right, rgba(150, 222, 218, 0.64), rgba(146, 240, 236, 0.64));
@@ -233,7 +237,6 @@
 .devepoper_detail_wrapper h6 {
     letter-spacing: 0.3px;
     font-size: 20px;
-    font-family: 'montserrat', sans-serif;
     font-family: 'open+sans', sans-serif;
     font-weight: 600;
     color: #505050;
@@ -242,6 +245,7 @@
 }
 
 /* you */
+
 .last_dev #profile_image ~ span > h3 {
     font-size: 25px;
     color: #0f0f0f;
@@ -307,5 +311,186 @@
 .lang img:hover {
     transform: scale(1.3);
     filter: grayscale(0.9);
-    box-shadow: 0px 9px 8px -5px #5f5f5f;
+}
+
+
+/* responsive */
+
+@media only screen and (min-width:800px) and (max-width:1024px) {
+    .developer_wrapper {
+        width: 780px;
+        height: 275px;
+    }
+
+    .devepoper_detail_wrapper {
+        width: 58%;
+    }
+
+}
+
+@media only screen and (min-width:600px) and (max-width:800px) {
+
+    /* banner */
+    #banner .content {
+        padding-top: 33%;
+        padding-bottom: 12%;
+    }
+
+    /* Developer cards */
+    .developer_wrapper {
+        width: 585px;
+        height: 215px;
+    }
+    .devepoper_detail_wrapper {
+        width: 63%;
+        margin-left: 37%;
+    }
+    .devepoper_detail_wrapper h4 {
+        margin-bottom: 8px;
+        font-size: 24px;
+    }
+
+    .devepoper_detail_wrapper h6 {
+        letter-spacing: 0.3px;
+        margin-bottom: 11px;
+    }
+
+    .lang {
+        margin-top: 1%;
+        width: 45%;
+    }
+
+    .devepoper_detail_wrapper h5 {
+        margin-left: 8%;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 6px;
+    }
+    .lang img {
+        width: 25px;
+        margin-left: 13px;
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width:600px) {
+    
+    /* Nav */
+    .navbar {
+        z-index: 100000;
+    }
+
+    /* banner */
+    #banner .content {
+        padding-top: 39%;
+        padding-bottom: 15%;
+    }
+    #banner h5,
+    #banner p {
+        font-size: 18px;
+    }
+
+    .developer_wrapper {
+        box-shadow: 0px 0px 1px 0px rgba(144, 144, 144, 0.83);
+        border: 1px solid rgba(88, 88, 88, 0.3607843137254902);
+        width: 380px;
+        height: 596px;
+        overflow: hidden;
+    }
+
+    .developer_detail {
+        width: 100%;
+        height: 100%;
+    }
+    .devepoper_detail_wrapper,
+    .second_dev .devepoper_detail_wrapper {
+        padding-top: 3%;
+        padding-bottom: 5%;
+        top: 77%;
+        z-index: 10000;
+        margin-left: 0px;
+        width: 100%;
+        background: -webkit-linear-gradient(to right, rgba(150, 222, 218, 0.64), rgba(146, 240, 236, 0.64));
+        background: linear-gradient(to right, rgb(150, 222, 218), rgb(146, 240, 236));
+    }
+    .devepoper_detail_wrapper h4 {
+        margin-bottom: 14px;
+        font-size: 30px;
+    }
+    .devepoper_detail_wrapper h6 {
+        letter-spacing: 0.3px;
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-left: 7%;
+    }
+    .lang {
+        margin-top: 1%;
+        width: 100%;
+        display: inline-block;
+    }
+    .devepoper_detail_wrapper h5 {
+        margin-left: 0px;
+        font-size: 22px;
+        margin-top: 5px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+    .lang img {
+        width: 32px;
+        margin-left: 20px;
+    }
+    .lang:last-child #facebook img {
+        margin-left: -2%;
+    }
+
+    /* profile image */
+    .profile_img {
+        display: block;
+        height: 380px;
+        width: 380px;
+    }
+    #profile_image,
+    .second_dev #profile_image {
+        width: 100%;
+        height: 100%;
+        z-index: 1000 !important;
+        -webkit-clip-path: none;
+        clip-path: none;
+    }
+    .developer_detail:hover #profile_image,
+    .second_dev .developer_detail:hover #profile_image {
+        -webkit-clip-path: none;
+        clip-path: none;
+    }
+
+    /* span */
+    .profile_img > .dev_follow {
+        width: 100%;
+        height: 50%;
+        top: 16%;
+        left: 0%;
+        opacity: 0;
+        z-index: 10000;
+    }
+    .developer_detail:hover .dev_follow,
+    .developer_detail:hover .dev_follow {
+        top: 10%;
+    }
+    #profile_image ~ span > h3,
+    #profile_image ~ span > h3 {
+        margin-left: 0px;
+    }
+    #profile_image ~ span > img {
+        padding-right: 0px;
+    }
+    #profile_image ~ span > button {
+        margin-left: 0px;
+        display: block;
+        margin: auto;
+        margin-top: 5%;
+    }
+}
+
+
+@media only screen and (min-width:280px) and (max-width:480px) {
+    
 }
