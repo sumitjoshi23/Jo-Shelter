@@ -28,42 +28,168 @@
 .developer_wrapper {
     box-shadow: 0px 0px 1px 0px rgba(144, 144, 144, 0.83);
     border: 1px solid rgba(88, 88, 88, 0.3607843137254902);
-    width: 900px;
+    width: 850px;
     margin: auto;
     margin-top: 6%;
+    transition: all 0.3s;
 }
 
 #profile_image {
-    float: left;
-    width: 36.15%;
+    width: 100%;
+    height: 100%;
+    z-index: 1000 !important;
     -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+    position: relative;
+    z-index: 1 !important;
+    transition: all 0.3s;
 }
 
-#profile_image::after {}
+.profile_img:hover > #profile_image {
+
+    -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    filter: blur(2px) brightness(70%);
+    transform: scale(1.1);
+}
+
+/* hover effected span */
+
+.profile_img {
+    display: inline-block;
+    height: 100%;
+    width: 36.6%;
+    padding-right: 2%;
+    overflow: hidden;
+}
+
+.profile_img > .dev_follow {
+    width: 36.15%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    opacity: 0;
+    z-index: 30;
+    transition: all 0.3s cubic-bezier(0.62, 0.51, 0.6, 1.15) !important;
+    visibility: hidden;
+    font-family: 'lato', sans-serif;
+}
+
+#profile_image ~ span > img {
+    width: 20%;
+    width: 20%;
+    padding-right: 15%;
+    padding-top: 3%;
+    display: block;
+    margin: auto;
+    z-index: 20;
+}
+
+.profile_img:hover > .dev_follow {
+    top: 21%;
+    transition: all 0.3s 0s !important;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* text */
+
+#profile_image ~ span > h3 {
+    font-size: 30px;
+    color: #efefef;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: -15%;
+}
+
+/* for second devlpoer */
+
+.second_dev .profile_img {
+    float: right;
+    padding-right: 0px;
+    padding-left: 2%;
+}
+
+.second_dev .devepoper_detail_wrapper {
+    margin-left: 4%;
+}
+
+.second_dev #profile_image {
+    float: right;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+}
+
+.second_dev .profile_img:hover > #profile_image {
+
+    -webkit-clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+    filter: blur(2px) brightness(70%);
+    transform: scale(1.1);
+}
+
+.second_dev #profile_image ~ span {
+    left: auto;
+    right: -5%;
+}
+
+/* button */
+
+#profile_image ~ span > button {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    padding: 1.5% 8%;
+    border: 3px solid #e96060;
+    -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 0, 100% 0%, 80% 100%, 0% 100%);
+    margin-left: 20%;
+    margin-top: 5%;
+    transition: all 0.3s;
+}
+
+#profile_image ~ span > button a {
+    text-decoration: none;
+    color: #e96060;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+#profile_image ~ span > button:hover {
+    background-color: #e96060;
+    border: 3px solid white;
+    color: white;
+}
+
+#profile_image ~ span > button:hover a {
+    color: white;
+}
 
 .developer_detail {
-    width: 74.85%;
-    height: 325.344px;
-    /*background-color: #cfd9dc;*/
-    -webkit-clip-path: polygon(14.5% 0, 100% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(14.5% 0, 100% 0%, 100% 100%, 0% 100%);
-    margin-left: 25.2%;
+    width: 100%;
+    height: 309px;
     position: relative;
-
     background: #50C9C3;
     background: -webkit-linear-gradient(to right, rgba(150, 222, 218, 0.64), rgba(146, 240, 236, 0.64));
     background: linear-gradient(to right, rgba(150, 222, 218, 0.64), rgba(146, 240, 236, 0.64));
+    position: relative;
+    overflow: hidden;
 }
 
+
 .devepoper_detail_wrapper {
-    margin-left: 22%;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 47%;
     transform: translateY(-50%);
-    width: 66%;
-
+    width: 60%;
+    z-index: 1;
+    margin-left: 34%;
 }
 
 .devepoper_detail_wrapper h4 {
@@ -128,12 +254,14 @@
     margin-top: 1%;
     width: 49%;
     display: inline-block;
+    float: left;
 }
 
 
 .lang img {
     width: 32px;
     margin-left: 20px;
+    transition: all 0.3s ease-out;
 }
 
 .lang img:nth-child(2) {
@@ -141,50 +269,10 @@
 }
 
 
+/* social media hover */
 
-
-
-#facebook {
-    width: 28px;
-    content: url('images/icons/facebook1.png');
-}
-
-#twitter {
-    width: 28px;
-    margin-left: 20px;
-    content: url('images/icons/twitter1.png');
-}
-
-#github {
-    width: 28px;
-    margin-left: 20px;
-    content: url('images/icons/github1.png');
-}
-
-#instagram {
-    width: 28px;
-    margin-left: 20px;
-    content: url('images/icons/instagram1.png');
-}
-
-
-
-#facebook:hover {
-    width: 28px;
-    content: url('images/icons/facebook2.png');
-}
-
-#twitter:hover {
-    width: 28px;
-    content: url('images/icons/twitter2.png');
-}
-
-#github:hover {
-    width: 28px;
-    content: url('images/icons/github2.png');
-}
-
-#instagram:hover {
-    width: 28px;
-    content: url('images/icons/instagram2.png');
+.lang img:hover {
+    transform: scale(1.3);
+    filter: grayscale(0.9);
+    box-shadow: 0px 9px 8px -5px #5f5f5f;
 }

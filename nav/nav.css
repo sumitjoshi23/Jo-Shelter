@@ -73,16 +73,27 @@ nav a {
     transition: all 0.2s;
 }
 
+nav a:after {
+    content: ' ';
+    height: 2.6px;
+    background: transparent;
+    display: block;
+    margin-top: 2%;
+    width: 95%;
+    margin: auto;
+    transition: all 0.35s;
+}
+
+nav a:after:hover {
+    background: #fee4c9;
+}
+
 nav a:first-child {
     margin-left: 0%;
 }
 
 nav a:hover {
     color: rgb(245, 172, 172);
-}
-
-.active_nav {
-    text-decoration: none !important;
 }
 
 .active_nav:after {
@@ -94,10 +105,6 @@ nav a:hover {
     width: 95%;
     margin: auto;
     transition: all 0.2s;
-}
-
-.active_nav:hover {
-    text-decoration: none !important;
 }
 
 a:hover:after {
