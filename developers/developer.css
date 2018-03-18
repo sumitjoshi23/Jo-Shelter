@@ -6,23 +6,46 @@
 /* navbar */
 
 .navbar {
-    background: #2d2322;
-    background: -moz-linear-gradient(left, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
-    background: -webkit-linear-gradient(left, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
-    background: linear-gradient(to right, #44352d 0%, #2d2322 50%, #1a1a1c 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44352d', endColorstr='#1a1a1c', GradientType=1);
     padding: 1.5% 0px;
+}
+
+/* banner */
+
+#banner {
+    display: block;
+    background-image: linear-gradient(to right bottom, rgba(125, 121, 121, 0.35), rgba(13, 8, 8, 0.75)), url('images/developer_background.jpg');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#banner .content {
+    padding-top: 22%;
+    padding-bottom: 11%;
+}
+
+#banner h5 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'montserrat', sans-serif;
+    color: white;
+}
+
+#banner p {
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-top: 30px;
 }
 
 
 /* developer section */
 
 #developers {
-    padding: 7% 0px;
-    background-color: #f5f5f5;
-    background: #70e1f5;
-    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
-    background: linear-gradient(to right, #ffd194, #70e1f5);
+    padding: 5% 0px;
+    background-color: rgba(244, 244, 244, 0.33);
 }
 
 .developer_wrapper {
@@ -218,6 +241,15 @@
     margin-bottom: 15px;
 }
 
+/* you */
+.last_dev #profile_image ~ span > h3 {
+    font-size: 25px;
+    color: #0f0f0f;
+}
+
+.last_dev #profession::before {
+    content: url("images/code.png");
+}
 
 .devepoper_detail_wrapper #profession:before,
 .devepoper_detail_wrapper #place:before {
@@ -239,6 +271,7 @@
 
 .devepoper_detail_wrapper h5 {
     text-align: center;
+    margin-left: 10%;
     color: #191919;
     font-size: 24px;
     font-weight: bolder;
