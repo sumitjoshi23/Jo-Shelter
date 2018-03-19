@@ -284,7 +284,7 @@
 @media only screen and (min-width:280px) and (max-width:480px) {
     /* fotter */
     .fotter_container {
-        width: 280px;
+        width: 261px;
         padding: 2% 0px 5.5% 0px;
     }
     .fotter_contact {

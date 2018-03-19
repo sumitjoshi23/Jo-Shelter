@@ -1,6 +1,8 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 /* navbar */
@@ -444,8 +446,8 @@
     /* profile image */
     .profile_img {
         display: block;
-        height: 350px;
-        width: 350px;
+            height: 80%;
+    width: 100%;
     }
     #profile_image,
     .second_dev #profile_image {
@@ -501,25 +503,35 @@
     /* developer card */
     .developer_wrapper {
         width: 98%;
-        height: 450px;
+        height: 445px;
     }
     .devepoper_detail_wrapper,
     .second_dev .devepoper_detail_wrapper {
-        padding-top: 1%;
+            padding-top: 1%;
+    padding-bottom: 0%;
+    margin-top: 1.7%;
+
     }
     .devepoper_detail_wrapper h4 {
-        margin-bottom: 10px;
-        font-size: 25px;
+        margin-bottom: 9px;
+        font-size: 22px;
+    }
+    .devepoper_detail_wrapper #profession:before,
+    .devepoper_detail_wrapper #place:before {
+        width: 20px;
+        height: 20px;
+        margin-left: -23px;
+        margin-top: -4px;
     }
     .devepoper_detail_wrapper h6 {
         letter-spacing: 0.2px;
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 8px;
     }
     .devepoper_detail_wrapper h5 {
-        font-size: 19px;
-        margin-top: 5px;
-        margin-bottom: 4px;
+        font-size: 17px;
+    margin-top: 1px;
+    margin-bottom: 4px;
     }
     .lang img {
         width: 22px;
