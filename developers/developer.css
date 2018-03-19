@@ -48,9 +48,6 @@
 #developers {
     padding: 5% 0px;
     background-color: rgba(244, 244, 244, 0.33);
-    background: #70e1f5;
-    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
-    background: linear-gradient(to right, #ffd194, #70e1f5);
 }
 
 .developer_wrapper {
@@ -202,9 +199,9 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background: #50C9C3;
-    background: -webkit-linear-gradient(to right, rgba(150, 222, 218, 0.64), rgba(146, 240, 236, 0.64));
-    background: linear-gradient(to right, rgba(150, 222, 218, 0.64), rgba(146, 240, 236, 0.64));
+    background: #a1fffa;
+    background: -webkit-linear-gradient(to right, rgba(176, 235, 232, 0.64), rgba(146, 240, 236, 0.64)));
+    background: linear-gradient(to right, rgba(176, 235, 232, 0.64), rgba(146, 240, 236, 0.64));
     position: relative;
     overflow: hidden;
 }
@@ -446,8 +443,8 @@
     /* profile image */
     .profile_img {
         display: block;
-            height: 80%;
-    width: 100%;
+        height: 80%;
+        width: 100%;
     }
     #profile_image,
     .second_dev #profile_image {
@@ -507,9 +504,9 @@
     }
     .devepoper_detail_wrapper,
     .second_dev .devepoper_detail_wrapper {
-            padding-top: 1%;
-    padding-bottom: 0%;
-    margin-top: 1.7%;
+        padding-top: 1%;
+        padding-bottom: 0%;
+        margin-top: 1.7%;
 
     }
     .devepoper_detail_wrapper h4 {
@@ -530,8 +527,8 @@
     }
     .devepoper_detail_wrapper h5 {
         font-size: 17px;
-    margin-top: 1px;
-    margin-bottom: 4px;
+        margin-top: 1px;
+        margin-bottom: 4px;
     }
     .lang img {
         width: 22px;
