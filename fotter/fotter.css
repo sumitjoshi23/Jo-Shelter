@@ -285,6 +285,7 @@
     /* fotter */
     .fotter_container {
         width: 280px;
+        padding: 2% 0px 5.5% 0px;
     }
     .fotter_contact {
         width: 160px;

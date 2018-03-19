@@ -276,6 +276,12 @@ a:hover:after {
         color: white;
         background-size: 0% 200%;
     }
+
+    a:hover:after {
+        background: transparent;
+    }
+
+
     .active_nav {
         text-decoration: none !important;
     }
